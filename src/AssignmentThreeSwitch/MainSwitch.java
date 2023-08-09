@@ -4,8 +4,85 @@ import java.util.Scanner;
 
 public class MainSwitch {
     public static void main(String[] args) {
+        //question14
+        SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+
+
+
+        //question13
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your ID: ");
+        s.setUserID(sc.nextInt());
+        if(s.getUserID()==31202){
+        System.out.print("Enter your user name: ");
+        s.setUserName(sc.next());
+        System.out.print("Enter your user father name: ");
+        s.setUserFName(sc.next());
+        System.out.print("Enter your user education: ");
+        s.setUserEducation(sc.next());
+        System.out.print("Enter your user job status (yes,no): ");
+        s.setUserJobStatus(sc.next());
+        switch (s.getUserID()){
+            case 31202-> {
+                System.out.printf("1. user  ID is: %s",s.getUserID());
+                System.out.println();
+                System.out.printf("2. user  Name is: %s",s.getUserName());
+                System.out.println();
+                System.out.printf("3. user  Father Name is: %s",s.getUserFName());
+                System.out.println();
+                System.out.printf("4. user  Education is: %s",s.getUserEducation());
+                System.out.println();
+                System.out.printf("5. user  Job Status is: %s",s.getUserJobStatus());
+            }
+            default -> throw new IllegalArgumentException("invalid id");
+        }
+        } else throw new IllegalArgumentException("invalid id");*/
+
+
+        //question12
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your password: ");
+        s.setPasswordUserinput(sc.next());
+        if(s.getPasswordUserinput().equals(s.getPasswordSaved())){
+        switch (s.getCaseVariable()){
+            case 1-> System.out.println("Password matched");
+            default -> System.out.println("PASSWORD NOT MATCH");
+        }
+        }else System.out.println("PASSWORD NOT MATCH");*/
+
+
+        /*//question11
+        SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter department ID: ");
+        s.setStringInput(sc.next());
+        switch (s.getStringInput()){
+            case "CS-1"-> System.out.println("Computer Science");
+            case "SE-2"-> System.out.println("Software Engineering");
+            case "IT-3"-> System.out.println("Information Technology");
+            case "AI-4"-> System.out.println("Artificial Intelligence");
+            case "AD-0"-> System.out.println("Anonymous Department");
+            default -> System.out.println("invalid department id");
+        }*/
+
+        //question10
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        s.setNumberInput(sc.nextInt());
+        switch (s.getNumberInput()) {
+            case 1,2,3,4,5,6,7,8,9,10:
+                System.out.println("Character is: "+(char)s.getNumberInput());
+                break;
+            default:
+                throw new IllegalArgumentException("value is more than 10; invalid");
+        }*/
 
         //question9
+/*
         SwitchAssignment s = new SwitchAssignment();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a first operand: ");
@@ -23,6 +100,7 @@ public class MainSwitch {
             case '%' -> System.out.println((float)(s.getOperand1()%s.getOperand2()));
             default -> throw new IllegalArgumentException("invalid operator");
         }
+*/
 
         //question8
         /*SwitchAssignment s = new SwitchAssignment();

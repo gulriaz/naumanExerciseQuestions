@@ -16,6 +16,20 @@ public class SwitchAssignment {
     private float quadraticEquationRoot2;
     private float quadraticEquationVariableBSquare;
     //--------------------------------------
+    private int userID;
+    private String userName;
+    private String userFName;
+    private String userEducation;
+    private String userJobStatus;
+    //--------------------------------------
+    private String passwordUserinput;
+    private String passwordSaved = "PASSWORD";
+    private int caseVariable = 1;
+    //--------------------------------------
+    private String stringInput;
+    //--------------------------------------
+    private int numberInput;
+    //--------------------------------------
     private int operand1;
     private int operand2;
     private char operator;
@@ -42,6 +56,82 @@ public class SwitchAssignment {
 
     public static int getTwentyEight() {
         return TWENTY_EIGHT;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserFName() {
+        return userFName;
+    }
+
+    public void setUserFName(String userFName) {
+        this.userFName = userFName;
+    }
+
+    public String getUserEducation() {
+        return userEducation;
+    }
+
+    public void setUserEducation(String userEducation) {
+        this.userEducation = userEducation;
+    }
+
+    public String getUserJobStatus() {
+        return userJobStatus;
+    }
+
+    public void setUserJobStatus(String userJobStatus) {
+        this.userJobStatus = userJobStatus;
+    }
+
+    public int getCaseVariable() {
+        return caseVariable;
+    }
+
+    public void setCaseVariable(int caseVariable) {
+        this.caseVariable = caseVariable;
+    }
+
+    public String getPasswordSaved() {
+        return passwordSaved;
+    }
+
+    public String getPasswordUserinput() {
+        return passwordUserinput;
+    }
+
+    public void setPasswordUserinput(String passwordUserinput) {
+        this.passwordUserinput = passwordUserinput;
+    }
+
+    public String getStringInput() {
+        return stringInput;
+    }
+
+    public void setStringInput(String stringInput) {
+        this.stringInput = stringInput;
+    }
+
+    public int getNumberInput() {
+        return numberInput;
+    }
+
+    public void setNumberInput(int numberInput) {
+        this.numberInput = numberInput;
     }
 
     public int getOperand1() {

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502ea7d8-1070-4a9e-99a2-cb1b9ae0bde4" name="Changes" comment="new setup">
-      <change afterPath="$PROJECT_DIR$/src/RoughClassSideUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssignmentThreeSwitch/MainSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentThreeSwitch/MainSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssignmentThreeSwitch/SwitchAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentThreeSwitch/SwitchAssignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rough.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Tjxb7pXPn1rwPfszsquHMJxahg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,7 +41,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "onboarding.tips.debug.path": "C:/Users/mypc/IdeaProjects/Exercise/src/Main.java"
   }
 }]]></component>
