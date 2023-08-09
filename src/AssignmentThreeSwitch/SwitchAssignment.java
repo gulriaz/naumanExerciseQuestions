@@ -16,6 +16,10 @@ public class SwitchAssignment {
     private float quadraticEquationRoot2;
     private float quadraticEquationVariableBSquare;
     //--------------------------------------
+    private int operand1;
+    private int operand2;
+    private char operator;
+    //--------------------------------------
     private int compareNumber1;
     private int compareNumber2;
     private int compareStatus;
@@ -40,6 +44,30 @@ public class SwitchAssignment {
         return TWENTY_EIGHT;
     }
 
+    public int getOperand1() {
+        return operand1;
+    }
+
+    public void setOperand1(int operand1) {
+        this.operand1 = operand1;
+    }
+
+    public int getOperand2() {
+        return operand2;
+    }
+
+    public void setOperand2(int operand2) {
+        this.operand2 = operand2;
+    }
+
+    public char getOperator() {
+        return operator;
+    }
+
+    public void setOperator(char operator) {
+        this.operator = operator;
+    }
+
     public float getQuadraticEquationVariableBSquare() {
         return quadraticEquationVariableBSquare;
     }
@@ -62,8 +90,8 @@ public class SwitchAssignment {
         return value;
     }
 
-    public float quadraticEquationAbsoluteValueCreator(float value){
-        value=value*(-1);
+    public float quadraticEquationAbsoluteValueCreator(float value) {
+        value = value * (-1);
 
         return value;
     }

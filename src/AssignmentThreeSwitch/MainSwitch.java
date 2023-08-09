@@ -8,8 +8,21 @@ public class MainSwitch {
         //question9
         SwitchAssignment s = new SwitchAssignment();
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a first operand: ");
+        s.setOperand1(sc.nextInt());
+        System.out.print("Enter a second operand: ");
+        s.setOperand2(sc.nextInt());
+        System.out.print("Enter your operator: ");
+        s.setOperator(sc.next().charAt(0));
 
-
+        switch (s.getOperator()){
+            case '+' -> System.out.println((float)(s.getOperand1()+s.getOperand2()));
+            case '-' -> System.out.println((float)(s.getOperand1()-s.getOperand2()));
+            case '*' -> System.out.println((float)(s.getOperand1()*s.getOperand2()));
+            case '/' -> System.out.println((float)(s.getOperand1()/s.getOperand2()));
+            case '%' -> System.out.println((float)(s.getOperand1()%s.getOperand2()));
+            default -> throw new IllegalArgumentException("invalid operator");
+        }
 
         //question8
         /*SwitchAssignment s = new SwitchAssignment();
