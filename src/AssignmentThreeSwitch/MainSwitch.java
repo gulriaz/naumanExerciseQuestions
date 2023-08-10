@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MainSwitch {
     public static void main(String[] args) {
-
+//
         //question20
         /*SwitchAssignment s = new SwitchAssignment();
         Scanner sc = new Scanner(System.in);
