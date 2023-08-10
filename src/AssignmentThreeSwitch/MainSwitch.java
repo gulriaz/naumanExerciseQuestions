@@ -4,10 +4,230 @@ import java.util.Scanner;
 
 public class MainSwitch {
     public static void main(String[] args) {
-        //question14
-        SwitchAssignment s = new SwitchAssignment();
-        Scanner sc = new Scanner(System.in);
 
+        //question20
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        char tryAgain;
+        do {
+            System.out.print("Enter a character: ");
+            s.setCaseVariableChar(sc.next().charAt(0));
+            if(Character.isLowerCase(s.getCaseVariableChar())){
+                s.setCaseVariableInt(1);
+            } else if (Character.isUpperCase(s.getCaseVariableChar())) {
+                s.setCaseVariableInt(0);
+            }else s.setCaseVariableInt(-1);
+
+            switch (s.getCaseVariableInt()){
+                case 1 -> System.out.println("\u001B[33m" + "character is lower case."+SwitchAssignment.ANSI_RESET);
+                case 0 -> System.out.println("\u001B[35m" + "character is upper case."+SwitchAssignment.ANSI_RESET);
+                case -1 -> System.out.println("\u001B[31m" + "character is not an alphabet case."+SwitchAssignment.ANSI_RESET);
+                default -> System.out.println("Invalid Alphabet");
+            }
+
+            System.out.print("\ndo you want to try again: ");
+            tryAgain=sc.next().charAt(0);
+
+        } while (tryAgain=='y' || tryAgain=='Y');*/
+
+
+        //question19
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        char tryAgain;
+        do {
+            System.out.print("Enter a value: ");
+            s.setNumberInt1(sc.nextInt());
+            String intStringValue=Integer.toString(s.getNumberInt1());
+            char oneValue=intStringValue.charAt((intStringValue.length()-1));
+            intStringValue=Character.toString(oneValue);
+            int value=Integer.parseInt(intStringValue);//one char String to int.
+            switch (value){
+                case 1 -> System.out.printf("result is: %.3f",((float)value)/10);
+                case 5 -> System.out.printf("result is: %.3f",((float)value)/100);
+                case 9 -> System.out.printf("result is: %.3f",((float)value)/1000);
+                default -> System.out.printf("result is: %.3f",((float)value)/20);
+            }
+            System.out.print("\ndo you want to try again: ");
+            tryAgain=sc.next().charAt(0);
+
+        } while (tryAgain=='y' || tryAgain=='Y');*/
+
+        //question18
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        char tryAgain;
+        do {
+        System.out.print("Enter your age: ");
+        s.setNumberInt1(sc.nextInt());
+
+        if (s.getNumberInt1() >= 18 && s.getNumberInt1() <= 80) {
+            s.setCaseVariableInt(1); // yes vote
+        } else if (s.getNumberInt1() < 18 && s.getNumberInt1() > 0) {
+            s.setCaseVariableInt(0); // no vote
+        } else s.setCaseVariableInt(-1);
+
+        switch (s.getCaseVariableInt()) {
+            case 1 -> System.out.println("you are eligible.");
+            case 0 -> System.out.println("you are not eligible.");
+            case -1 -> System.out.println("invalid age.");
+            default -> System.out.println("invalid case");
+        }
+
+        System.out.print("do you want to try again: ");
+        tryAgain=sc.next().charAt(0);
+
+    } while (tryAgain=='y' || tryAgain=='Y');*/
+
+
+        //question17
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        char tryAgain;
+        do {
+            System.out.print("Enter your marks: ");
+            s.setNumberInt1(sc.nextInt());
+
+            if (s.getNumberInt1() >= 50 && s.getNumberInt1() < 60) {
+                s.setCaseVariableString("D");
+            } else if (s.getNumberInt1() >= 60 && s.getNumberInt1() < 69) {
+                s.setCaseVariableString("C");
+            } else if (s.getNumberInt1() >= 70 && s.getNumberInt1() < 79) {
+                s.setCaseVariableString("B");
+            } else if (s.getNumberInt1() >= 80 && s.getNumberInt1() < 89) {
+                s.setCaseVariableString("A");
+            } else if (s.getNumberInt1() >= 90 && s.getNumberInt1() <= 100) {
+                s.setCaseVariableString("A+");
+            } else s.setCaseVariableString("F");
+
+            switch (s.getCaseVariableString()) {
+                case "D" -> System.out.println(s.getCaseVariableString() + " Passed: Need improvement");
+                case "C" -> System.out.println(s.getCaseVariableString() + " Passed: Result is satisfactory");
+                case "B" -> System.out.println(s.getCaseVariableString() + " Passed: Result is good");
+                case "A" -> System.out.println(s.getCaseVariableString() + " Passed: Result is excellent");
+                case "A+" -> System.out.println(s.getCaseVariableString() + " Passed: Result with distinction");
+                case "F" -> System.out.println(s.getCaseVariableString() + " Fail: very poor result");
+                default -> throw new IllegalArgumentException("invalid value.");
+            }
+
+            System.out.print("do you want to try again: ");
+            tryAgain=sc.next().charAt(0);
+
+        } while (tryAgain=='y' || tryAgain=='Y');*/
+
+        //question16
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        s.setNumberInt1(sc.nextInt());
+        System.out.print("Enter number 2: ");
+        s.setNumberInt2(sc.nextInt());
+        System.out.print("Enter number 3: ");
+        s.setNumberInt3(sc.nextInt());
+
+        if(s.getNumberInt1()>s.getNumberInt2() && s.getNumberInt1()>s.getNumberInt3()){
+            s.setCaseVariable(1);
+        }else if(s.getNumberInt2()>s.getNumberInt1() && s.getNumberInt2()>s.getNumberInt3()){
+            s.setCaseVariable(2);
+        }else if(s.getNumberInt3()>s.getNumberInt1() && s.getNumberInt3()>s.getNumberInt2()){
+            s.setCaseVariable(3);
+        }else s.setCaseVariable(9);
+
+        switch (s.getCaseVariable()){
+            case 1 -> System.out.println(s.getNumberInt1()+" is greater than all.");
+            case 2 -> System.out.println(s.getNumberInt2()+" is greater than all.");
+            case 3 -> System.out.println(s.getNumberInt3()+" is greater than all.");
+            default -> throw new IllegalArgumentException("invalid value.");
+        }*/
+
+
+        //question15
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number up to 20: ");
+        s.setIntUserInput(sc.nextInt());
+
+        switch (s.getIntUserInput()){
+            case 1 -> System.out.println("One");
+            case 2 -> System.out.println("Two");
+            case 3 -> System.out.println("Three");
+            case 4 -> System.out.println("Four");
+            case 5 -> System.out.println("Five");
+            case 6 -> System.out.println("Six");
+            case 7 -> System.out.println("Seven");
+            case 8 -> System.out.println("Eight");
+            case 9 -> System.out.println("Nine");
+            case 10 -> System.out.println("Ten");
+            case 11 -> System.out.println("Eleven");
+            case 12 -> System.out.println("Twelve");
+            case 13 -> System.out.println("Thirteen");
+            case 14 -> System.out.println("Fourteen");
+            case 15 -> System.out.println("Fifteen");
+            case 16 -> System.out.println("Sixteen");
+            case 17 -> System.out.println("Seventeen");
+            case 18 -> System.out.println("Eighteen");
+            case 19 -> System.out.println("Ninteen");
+            case 20 -> System.out.println("Twenty");
+            default -> throw new IllegalArgumentException("invalid input.");
+        }*/
+
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        String wordCacheIntValues;
+        int choice;
+        System.out.println("Enter your choice; word with digit 1 or without digit 2: ");
+        choice = sc.nextInt();
+        switch (choice) {
+            case 1 -> {
+                System.out.print("Enter any word including number in it: ");
+                s.setWordUserInput(sc.next());
+                String wordCache = s.getWordUserInput();
+                StringBuilder str = new StringBuilder();
+                for (int i = 0; i < wordCache.length(); i++) {
+                    if(((i+1)<=(wordCache.length()-1))) {
+                    if ((Character.isDigit(wordCache.charAt(i))) && (Character.isDigit(wordCache.charAt(i + 1)))) {
+                        str.append(wordCache.charAt(i));
+                        str.append(wordCache.charAt(i + 1));
+                        str.append("_");
+                        if(i+1==(wordCache.length()-1)){
+                            wordCacheIntValues = str.toString();
+                            System.out.print("values in the word are: " + wordCacheIntValues);
+                            System.exit(0);
+                        }
+                    }else  if ((Character.isDigit(wordCache.charAt(i)))){
+
+                        str.append(wordCache.charAt(i));
+                        str.append("_");
+                        if(i==(wordCache.length()-1)){
+                            wordCacheIntValues = str.toString();
+                            System.out.print("values in the word are: " + wordCacheIntValues);
+                            System.exit(0);
+                        }
+                    }
+                    }else if ((Character.isDigit(wordCache.charAt(i)))) {
+                        str.append(wordCache.charAt(i));
+                        str.append("_");
+                    }
+
+                }
+                wordCacheIntValues = str.toString();
+                System.out.print("values in the word are: " + wordCacheIntValues);
+            }
+            case 2 -> System.out.println("you have entered a word without digit: " + s.getWordUserInput());
+            default -> System.out.println("invalid choice");
+        }*/
+
+
+        //question14
+        /*SwitchAssignment s = new SwitchAssignment();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your gender m for male, f for female: ");
+        s.setGenderUserInput(sc.next());
+        switch (s.getGenderUserInput()){
+            case "m" -> System.out.println("your gender is male.");
+            case "f" -> System.out.println("your gender is female.");
+            default -> System.out.println("invalid gender.");
+        }*/
 
 
         //question13

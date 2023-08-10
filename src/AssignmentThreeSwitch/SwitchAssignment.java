@@ -4,9 +4,26 @@ import java.util.Scanner;
 
 public class SwitchAssignment {
 
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final int MAX_RANDOM = 6;
+    public static final int MIN_RANDOM = 1;
     private final static int THIRTY = 30;
     private final static int THIRTY_ONE = 31;
     private final static int TWENTY_EIGHT = 28;
+    //-----------------------------------------
+    private int caseVariableChar;
+    private int randomResult;
+    private int randomRange;
+    //-----------------------------------------
+    private int numberInt1;
+    private int numberInt2;
+    private int numberInt3;
+    //-----------------------------------------
+    private String wordUserInput;
+    private int intUserInput;
+    //-----------------------------------------
+    private String genderUserInput;
+    //-----------------------------------------
     private float quadraticEquationVariableA;
     private float quadraticEquationVariableB;
     private float quadraticEquationVariableC;
@@ -24,7 +41,8 @@ public class SwitchAssignment {
     //--------------------------------------
     private String passwordUserinput;
     private String passwordSaved = "PASSWORD";
-    private int caseVariable = 1;
+    private int caseVariableInt = 1;
+    private String caseVariableString;
     //--------------------------------------
     private String stringInput;
     //--------------------------------------
@@ -56,6 +74,86 @@ public class SwitchAssignment {
 
     public static int getTwentyEight() {
         return TWENTY_EIGHT;
+    }
+
+    public int getRandomRange() {
+        return randomRange;
+    }
+
+    public void setRandomRange(int randomRange) {
+        this.randomRange = randomRange;
+    }
+
+    public int getRandomResult() {
+        return randomResult;
+    }
+
+    public void setRandomResult(int randomResult) {
+        this.randomResult = randomResult;
+    }
+
+    public int getCaseVariableChar() {
+        return caseVariableChar;
+    }
+
+    public void setCaseVariableChar(int caseVariableChar) {
+        this.caseVariableChar = caseVariableChar;
+    }
+
+    public int getNumberInt1() {
+        return numberInt1;
+    }
+
+    public void setNumberInt1(int numberInt1) {
+        this.numberInt1 = numberInt1;
+    }
+
+    public int getNumberInt2() {
+        return numberInt2;
+    }
+
+    public void setNumberInt2(int numberInt2) {
+        this.numberInt2 = numberInt2;
+    }
+
+    public int getNumberInt3() {
+        return numberInt3;
+    }
+
+    public void setNumberInt3(int numberInt3) {
+        this.numberInt3 = numberInt3;
+    }
+
+    public String getCaseVariableString() {
+        return caseVariableString;
+    }
+
+    public void setCaseVariableString(String caseVariableString) {
+        this.caseVariableString = caseVariableString;
+    }
+
+    public int getIntUserInput() {
+        return intUserInput;
+    }
+
+    public void setIntUserInput(int intUserInput) {
+        this.intUserInput = intUserInput;
+    }
+
+    public String getWordUserInput() {
+        return wordUserInput;
+    }
+
+    public void setWordUserInput(String wordUserInput) {
+        this.wordUserInput = wordUserInput;
+    }
+
+    public String getGenderUserInput() {
+        return genderUserInput;
+    }
+
+    public void setGenderUserInput(String genderUserInput) {
+        this.genderUserInput = genderUserInput;
     }
 
     public int getUserID() {
@@ -98,16 +196,20 @@ public class SwitchAssignment {
         this.userJobStatus = userJobStatus;
     }
 
-    public int getCaseVariable() {
-        return caseVariable;
+    public int getCaseVariableInt() {
+        return caseVariableInt;
     }
 
-    public void setCaseVariable(int caseVariable) {
-        this.caseVariable = caseVariable;
+    public void setCaseVariableInt(int caseVariableInt) {
+        this.caseVariableInt = caseVariableInt;
     }
 
     public String getPasswordSaved() {
         return passwordSaved;
+    }
+
+    public void setPasswordSaved(String passwordSaved) {
+        this.passwordSaved = passwordSaved;
     }
 
     public String getPasswordUserinput() {
