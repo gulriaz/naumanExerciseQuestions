@@ -6,6 +6,8 @@ public class LoopsMain {
     public static void main(String[] args) {
 
         //question12
+        LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
 
 
 
