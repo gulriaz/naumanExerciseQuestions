@@ -5,6 +5,74 @@ import java.util.Scanner;
 public class LoopsMain {
     public static void main(String[] args) {
 
+        //question12
+
+
+
+        //question11
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+
+        while (l.getStringValueUserInput()=='y' || l.getStringValueUserInput()=='Y') {
+            System.out.print("Enter a value? ");
+            l.setIntValueUserInput(sc.nextInt());
+
+            switch (l.getIntValueUserInput() == 0 ? l.getIntValueUserInput() : (l.getIntValueUserInput() > 0 ? 1 : -1)) {
+                case 0 -> l.setCounterZeroValues(l.getCounterZeroValues() + 1);
+                case 1 -> l.setCounterPositiveValues(l.getCounterPositiveValues() + 1);
+                case -1 -> l.setCounterNegativeValues(l.getCounterNegativeValues() + 1);
+                default -> System.out.println("invalid values");
+            }
+            System.out.print("Want to continue? press y  ");
+            l.setStringValueUserInput(sc.next().charAt(0));
+        }
+        System.out.print(" --------------------------------");
+        System.out.printf("Total number of zeros'     : %d",l.getCounterZeroValues());
+        System.out.println();
+        System.out.printf("Total number of positives' : %d",l.getCounterPositiveValues());
+        System.out.println();
+        System.out.printf("Total number of negatives' : %d",l.getCounterNegativeValues());*/
+
+        //question10
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter value for the table you want to display? ");
+        l.setMultiplicationTable(sc.nextInt());
+        System.out.print("Enter the table range you want to display? ");
+        l.setMultiplicationRange(sc.nextInt());
+        int i=1;
+        while (i<=l.getMultiplicationRange()){
+            l.setMultiplicationResult(l.getMultiplicationTable()*i);
+
+            switch ((l.isDivisibleBy(l.getMultiplicationResult()))?l.getMultiplicationResult():0) {
+                case 0 -> System.out.println("Not divisible by five: invalid result.");
+                default->
+                {System.out.printf("%d x %d = %d", l.getMultiplicationTable(), i, l.getMultiplicationResult());
+                    System.out.println();}}
+
+            i++;
+        }*/
+
+        //question9
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter value for the table you want to display? ");
+        l.setMultiplicationTable(sc.nextInt());
+        int i=1;
+        while (i<=12){
+            l.setMultiplicationResult(l.getMultiplicationTable()*i);
+
+        switch ((l.isDivisibleBy(l.getMultiplicationResult()))?l.getMultiplicationResult():0) {
+            case 0 -> System.out.println("Not divisible by five: invalid result.");
+            default->
+            {System.out.printf("%d x %d = %d", l.getMultiplicationTable(), i, l.getMultiplicationResult());
+            System.out.println();}}
+
+            i++;
+        }*/
+
         //question8
         /*LoopSideClass l = new LoopSideClass();
         Scanner sc = new Scanner(System.in);
@@ -62,7 +130,6 @@ public class LoopsMain {
         }*/
 
 
-
         //question5
 /*
         LoopSideClass loop = new LoopSideClass();
@@ -90,7 +157,7 @@ public class LoopsMain {
             i++;
         }*/
 
-            //question3
+        //question3
         /*LoopSideClass loop = new LoopSideClass();
         int i = 1;
         while (i <= 10) {
