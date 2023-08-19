@@ -1,13 +1,16 @@
-package AssignmentFourLoops;
+package AssignmentWhileDoWhileLoops;
 
 public class LoopSideClass {
     //------------------------------
-    private int counterZeroValues=0;
-    private int counterPositiveValues=0;
-    private int counterNegativeValues=0;
+    private String stringNewValueUserInput;
+    private char charNewvalueUserInput;
+    //------------------------------
+    private int counterZeroValues = 0;
+    private int counterPositiveValues = 0;
+    private int counterNegativeValues = 0;
     //------------------------------
     private int intValueUserInput;
-    private char stringValueUserInput='y';
+    private char stringValueUserInput = 'y';
     private int intResultValue;
     //-----------------------------
     private int multiplicationTable;
@@ -18,6 +21,22 @@ public class LoopSideClass {
     private int productOfNaturalNumbers = 1;
     //------------------------------
     private int sumOfNaturalNumbers = 0;
+
+    public String getStringNewValueUserInput() {
+        return stringNewValueUserInput;
+    }
+
+    public void setStringNewValueUserInput(String stringNewValueUserInput) {
+        this.stringNewValueUserInput = stringNewValueUserInput;
+    }
+
+    public char getCharNewvalueUserInput() {
+        return charNewvalueUserInput;
+    }
+
+    public void setCharNewvalueUserInput(char charNewvalueUserInput) {
+        this.charNewvalueUserInput = charNewvalueUserInput;
+    }
 
     public int getCounterZeroValues() {
         return counterZeroValues;
@@ -76,6 +95,7 @@ public class LoopSideClass {
     }
 
     //------------------------------
+
     public boolean isDivisibleBy(int i) {
         if (i % getMultiplicationTable() == 0) {
             return true;
