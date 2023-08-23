@@ -2,9 +2,9 @@ public class RoughClassSideUsage {
 
     public int inner =1;
     public int outer =1;
-
-
     //---------------------------------
+
+
     private String message;
     private int rangeStart;
     private int rangeEnd;

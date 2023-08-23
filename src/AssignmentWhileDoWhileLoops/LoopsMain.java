@@ -5,8 +5,183 @@ import java.util.Scanner;
 
 public class LoopsMain {
     public static void main(String[] args) {
+        //==================FOR LOOP===================================
+
+        
+
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many numbers do you want to enter: ");
+        int max=sc.nextInt(), min=0, singleIntValue,sum=0,count=0;
+//        String num1,num2=" ";
+        char ch;
+
+        for (int i = min; i < max; i++) {
+            System.out.print("Enter a number: ");
+            singleIntValue=sc.nextInt();
+//            ch=num1.charAt(i);
+//            num2=Character.toString(ch);
+//            singleIntValue=Integer.parseInt(num2);
+            if (singleIntValue%2==0){
+                    sum=sum+singleIntValue;
+                    count++;
+            }
+        }
+        System.out.printf("sum of even values (%d) is: %d",count,sum);*/
+
+//questondsf
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many numbers do you want to enter: ");
+        int max=sc.nextInt(), min=0, singleIntValue,sum=0,count=0;
+//        String num1,num2=" ";
+        char ch;
+
+        for (int i = min; i < max; i++) {
+            System.out.print("Enter a number: ");
+            singleIntValue=sc.nextInt();
+//            ch=num1.charAt(i);
+//            num2=Character.toString(ch);
+//            singleIntValue=Integer.parseInt(num2);
+            if (singleIntValue%2!=0){
+                    sum=sum+singleIntValue;
+                    count++;
+            }
+        }
+        System.out.printf("sum of ODD values (%d) is: %d",count,sum);*/
+
+        //==================Do While Loop Assignment===================
+        //questionlast
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        int number1 = 0, previous = 0, largest=0, smallest=0, set = 1;
+        int oldlargest=0,oldsmallest=0;
+        boolean status = false;
+        char ch = ' ';
+        do {
+            System.out.println("Enter a number: ");
+            number1 = sc.nextInt();
+            System.out.println("you have entered: " + number1);
+            if(set==1){
+                largest=smallest=number1;
+                set++;
+                System.out.println("=> largest: "+largest);
+                System.out.println("=> smallest: "+ smallest);
+            }else if(set==2) {
+
+                if (!(largest > number1)) {
+                    oldlargest=largest;
+                    largest = number1;
+                }
+                if (oldlargest<smallest) {
+                        smallest=oldlargest;
+                }
+
+                if (!(smallest < number1)) {
+                    oldsmallest=smallest;
+                    smallest = number1;
+                }
+                if(oldsmallest>largest){
+                    largest=oldsmallest;
+                }
+                System.out.println("===> largest: "+largest);
+                System.out.println("===> smallest: "+ smallest);
+
+            }
+            System.out.println("Do you wish to try again (press y): ");
+            ch = sc.next().charAt(0);
+            if (ch == 'y' || ch == 'Y') {
+                status = true;
+
+            } else status = false;
+
+            System.out.println("=> " + status);
+
+        } while (status == true);
+
+        System.out.println("largest number is: " + largest);
+        System.out.println("smallest number is: " + smallest);*/
 
 
+        /*//q
+        LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        int intValuePostive = 0,digitUsed=0,count=0,root=0;
+        System.out.print("Enter a number: ");
+        if (sc.hasNextInt()) {
+            int number = sc.nextInt();
+            System.out.println("=> " + number);
+            if (number > 0) {
+                intValuePostive = number;
+                digitUsed=number;
+            }
+        }
+
+        do {
+
+            if((digitUsed%intValuePostive)==0){
+
+                count++;
+            }
+            intValuePostive--;
+        } while (intValuePostive >= 1);
+
+        if(count>2){
+            System.out.println("it is not a prime number.");
+        }else System.out.println("it is a prime number.");*/
+
+        //q4
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number(base).");
+        String fnumber=sc.next();
+
+        int intvalue;
+        int length=fnumber.length()-1;
+        int sumOdd=0,sumEven=0;
+        char ch;
+        do{
+            ch=fnumber.charAt(length);
+            intvalue=Integer.parseInt(Character.toString(ch));
+            if((intvalue%2)==0) {
+                sumEven =sumEven+intvalue;
+            }else
+                sumOdd=sumOdd+intvalue;
+
+            length--;
+        } while (length>=0);
+        System.out.println("total sum of even values: "+sumEven);
+        System.out.println("total sum of odd values: "+sumOdd);*/
+
+        //q2
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number(base).");
+        String fnumber=sc.next();
+        int length=fnumber.length()-1;
+        do{
+            System.out.print(fnumber.charAt(length));
+
+            length--;
+        } while (length>=0);
+*/
+
+
+        //q1
+/*
+        LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number(base).");
+        int fnumber=sc.nextInt();
+        System.out.print("Enter the second number(power).");
+        int snumber=sc.nextInt(),product=1;
+        do{
+            product=product*fnumber;
+            snumber--;
+        } while(snumber>=1);
+        System.out.println("value is: "+product);
+*/
+//==================While Loop Assignment======================
         //question28
         //highest common factor
         /*LoopSideClass l = new LoopSideClass();
