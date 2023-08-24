@@ -7,7 +7,85 @@ public class LoopsMain {
     public static void main(String[] args) {
         //==================FOR LOOP===================================
 
-        
+
+
+        //q11 harmonic series. ∑ n = 1 ∞ 1 n = 1 + 1 2 + 1 3 + 1 4 + 1 5 + ⋯
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        StringBuilder str = new StringBuilder();
+        System.out.print("Enter ending value: ");
+
+        int endingValue=sc.nextInt(), sum=0, intValue=0,length=0;
+        String stringValue=null;
+
+        for (int i = 1; i <2 ; i++) {
+            for (int j = 1; j <=endingValue ; j++) {
+                if(j==1){
+                    sum=sum+i;
+                    System.out.println("==> i: "+i);
+                    System.out.println("==> old sum is: "+sum);
+
+                }else {
+                    str.append(i);
+                    str.append(j);
+                    stringValue=str.toString();
+                    length=stringValue.length();
+                    intValue=Integer.parseInt(stringValue);
+                    System.out.println("==> intValue is: "+intValue);
+
+                    System.out.println("==> old sum is: "+sum);
+                    sum=sum+intValue;
+                    System.out.println("==> new sum is: "+sum);
+                    str.delete(0,length);
+
+
+                }
+            }
+
+        }*/
+
+
+
+        //q10
+        /*LoopSideClass l = new LoopSideClass();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of X: ");
+        int xInput = sc.nextInt();
+        System.out.print("Enter the length of the series: ");
+        int lOfSeriesInput = sc.nextInt();
+
+        int count=1,set=1,outerCounter=1;
+        float resultFactorial=0f,resultOfExpression=0f;
+
+        for (int i = 1; i <=lOfSeriesInput; i++) {
+            if (i % 2 == 0) {
+                resultFactorial = l.factorialFunc(i, xInput);
+            }
+
+            switch (i % 2 == 0 ? 2 : 1) {
+                case 1 -> {
+                    if (set == 1) {
+                        resultOfExpression = 1;
+                        System.out.println("sum of series is: " + resultOfExpression);
+                        set = 0;
+                    } else {
+
+                    }
+                }
+                case 2 -> {
+                    if (count % 2 != 0) {
+                        resultOfExpression = resultOfExpression - resultFactorial;
+                        System.out.println("sum of series is: " + resultOfExpression);
+                    } else {
+                        resultOfExpression = resultOfExpression + resultFactorial;
+                        System.out.println("sum of series is: " + resultOfExpression);
+                    }
+                    count++;
+                }
+            }
+        }
+            System.out.println("===> Finally; the sum of series is: " + resultOfExpression);*/
+
 
         /*LoopSideClass l = new LoopSideClass();
         Scanner sc = new Scanner(System.in);

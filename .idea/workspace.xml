@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="502ea7d8-1070-4a9e-99a2-cb1b9ae0bde4" name="Changes" comment="question 28, A4 While Loop COMPLETED">
+    <list default="true" id="502ea7d8-1070-4a9e-99a2-cb1b9ae0bde4" name="Changes" comment="For Loop STARTED/Image read/write">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopSideClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopSideClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopsMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoughClassSideUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughClassSideUsage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692431400835</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="For Loop STARTED/Image read/write">
+      <option name="closed" value="true" />
+      <created>1692771415618</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692771415618</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +160,7 @@
     <MESSAGE value="question 8, A4 While Loop" />
     <MESSAGE value="question 12, A4 While Loop" />
     <MESSAGE value="question 28, A4 While Loop COMPLETED" />
-    <option name="LAST_COMMIT_MESSAGE" value="question 28, A4 While Loop COMPLETED" />
+    <MESSAGE value="For Loop STARTED/Image read/write" />
+    <option name="LAST_COMMIT_MESSAGE" value="For Loop STARTED/Image read/write" />
   </component>
 </project>

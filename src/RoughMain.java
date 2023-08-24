@@ -7,8 +7,77 @@ import java.util.Scanner;
 
 public class RoughMain {
     public static void main(String[] args) {
-       //image resizing.
-        try {
+
+        //color splashing
+        char status='y';
+        while (status=='y') {
+            BufferedImage sourceImage = null, effectImage = null;
+            File file = null;
+            Scanner sc = new Scanner(System.in);
+            int redI = 0, greenI = 0, blueI = 0;
+
+            System.out.print("Enter filter value (1-255) for red color: ");
+            redI = sc.nextInt();
+            System.out.print("Enter filter value (1-255) for green color: ");
+            greenI = sc.nextInt();
+            System.out.print("Enter filter value (1-255) for blue color: ");
+            blueI = sc.nextInt();
+
+
+            try {
+                file = new File("C:\\Users\\mypc\\Desktop\\game.png");
+                sourceImage = ImageIO.read(file);
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            }
+            effectImage = new BufferedImage(sourceImage.getWidth(), sourceImage.getHeight(), sourceImage.getType());
+            for (int row = 0; row < sourceImage.getHeight(); row++) {
+                for (int col = 0; col < sourceImage.getWidth(); col++) {
+//                effectImage.setRGB(col,row,sourceImage.getRGB(col,row));
+                    int pixel = sourceImage.getRGB(col, row);
+                    int Alpha = pixel >> 24;
+//                System.out.println(Integer.toBinaryString(Alpha));
+                    int Red = pixel >> 16 & 0XFF;
+//                System.out.println(Integer.toBinaryString(Red));
+                    int Green = pixel >> 8 & 0XFF;
+//                System.out.println(Integer.toBinaryString(Green));
+                    int Blue = pixel & 0XFF;
+//                System.out.println(Integer.toBinaryString(Blue));
+
+                    //creating filters
+
+
+
+                    Red = Red - redI;
+                    Green = Green - greenI;
+                    Blue = Blue - blueI;
+
+                    int pixelPacking = Alpha << 24 | Red << 16 | Green << 8 | Blue;
+//                System.out.println("All packed: "+Integer.toBinaryString(pixelPacking));
+
+                    effectImage.setRGB(col, row, pixelPacking);
+
+
+                }
+            }
+
+            try {
+                ImageIO.write(effectImage, "png", new File("C:\\Users\\mypc\\Desktop\\game_cpy2.png"));
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            } finally {
+                System.out.println("connection closed.");
+
+                System.out.print("Do you want to continue; press y:");
+                status=sc.next().charAt(0);
+
+            }
+
+        }
+
+
+        //image resizing.
+        /*try {
 
             BufferedImage originalImage = ImageIO.read(new File("C:\\Users\\mypc\\Desktop\\Altis_Corolla.jpg"));//change path to where file is located
             int type = originalImage.getType();
@@ -28,15 +97,15 @@ public class RoughMain {
         g.dispose();
 
         return resizedImage;
-    }
+    }*/
 
         //sir wala below
         /*BufferedImage sourceImage =null, effectImage=null;
         File file=null;
 
         try{
-            file= new File("C:\\Users\\mypc\\Desktop\\Altis_Corolla.jpg");
-sourceImage= ImageIO.read(file);
+            file= new File("C:\\Users\\mypc\\Desktop\\game.png");
+            sourceImage= ImageIO.read(file);
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }finally {
@@ -45,16 +114,15 @@ sourceImage= ImageIO.read(file);
         effectImage = new BufferedImage(sourceImage.getWidth(),sourceImage.getHeight(),sourceImage.getType());
         for (int row=0,maxRow=sourceImage.getHeight()-1;row<sourceImage.getHeight();row++,maxRow--){
             for (int col=0; col<sourceImage.getWidth();col++){
-                effectImage.setRGB(col,row,sourceImage.getRGB(col,maxRow));
+                effectImage.setRGB(col,row,sourceImage.getRGB(col,row));
             }
         }
 
         try{
-            ImageIO.write(effectImage,"jpg",new File("C:\\Users\\mypc\\Desktop\\Copy_Altis_Corolla.jpg"));
+            ImageIO.write(effectImage,"png",new File("C:\\Users\\mypc\\Desktop\\Copy_Altis_Corolla.png"));
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }*/
-
 
 
         //random question sol 1
@@ -118,4 +186,5 @@ sourceImage= ImageIO.read(file);
 */
 
     }
+}
 
