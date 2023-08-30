@@ -8,32 +8,42 @@ import java.util.Scanner;
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        //adjusting image inside an image.
-        char status = 'y';
-        while (status == 'y') {
-            BufferedImage effectImageGreen = null, sourceImageTiberium =null;
+
+        /*//adjusting image inside an image.
+            BufferedImage sourceImageTV =null, sourceImageButterfly=null;
             File file = null, file2=null;
             Scanner sc = new Scanner(System.in);
             try {
                 file = new File("C:\\Users\\mypc\\Desktop\\Mirai_LCD_TV222.jpeg");
-//                file2 = new File("C:\\Users\\mypc\\Desktop\\Green.png");
-                sourceImageTiberium = ImageIO.read(file);
+                file2 = new File("C:\\Users\\mypc\\Desktop\\butterfly.jpeg");
+                sourceImageTV = ImageIO.read(file);
+                sourceImageButterfly = ImageIO.read(file2);
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
-            if (sourceImageTiberium != null) {
-                int widthPlusFive = sourceImageTiberium.getWidth();
+            if (sourceImageTV != null) {
+                int widthPlusFive = sourceImageTV.getWidth();
                 System.out.println("column: "+widthPlusFive);
-                int heightPlusFive = sourceImageTiberium.getHeight();
+                int heightPlusFive = sourceImageTV.getHeight();
                 System.out.println("row: "+heightPlusFive);
 
-                BufferedImage effectImage = new BufferedImage(widthPlusFive, heightPlusFive, sourceImageTiberium.getType());
+                BufferedImage effectImage = new BufferedImage(widthPlusFive, heightPlusFive, sourceImageTV.getType());
                 for (int row = 0; row < effectImage.getHeight(); row++) {
                     for (int col = 0; col < effectImage.getWidth(); col++) {
-                                if(row>=150 && row<=1400 && col>=350 && col<=1500){
-                                    effectImage.setRGB(col,row,sourceImageTiberium.getRGB(col,row));
-                                }else
-                                    effectImage.setRGB(col,row,Color.YELLOW.getRGB());
+                        if(row>=150 && row<=1150 && col>=350 && col<=2100){
+                            int j=row;
+                            int k=col;
+                            j=j-150;
+                            k=k-350;
+                            if(k<1751 && j<1001) {
+                                effectImage.setRGB(col, row, sourceImageButterfly.getRGB(k, j));
+                                System.out.println(j);
+                                System.out.println(k);
+                                j=0;
+                                k=0;
+                            }
+                        }else
+                            effectImage.setRGB(col,row,sourceImageTV.getRGB(col,row));
                     }
                 }
                 try {
@@ -42,11 +52,8 @@ public class RoughMain {
                     System.out.println(ex.getMessage());
                 } finally {
                     System.out.println("connection closed.");
-                    System.out.print("Do you want to continue; press y:");
-                    status = sc.next().charAt(0);
                 }
-            }
-        }
+            }*/
 
 
 
