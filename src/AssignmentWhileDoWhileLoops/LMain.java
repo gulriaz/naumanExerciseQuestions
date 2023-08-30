@@ -7,6 +7,50 @@ public class LMain {
 
         //==================FOR LOOP===================================
 
+        //question string to length without function
+        /*Scanner sc  = new Scanner(System.in);
+        System.out.print("Enter first term: ");
+        String firstTerm = sc.next();
+        int count=0;
+        int flag=1;
+        for (int i = 0;i<flag+i; ) {
+            try {
+                char ch = firstTerm.charAt(i);
+
+                if ((ch >= 'a' || ch <= 'z') || (ch >= 'A' || ch <= 'Z')) {
+                    if (ch + 1 >= 'a' || ch + 1 <= 'z' || ch + 1 <= 'Z') {
+                        i++;
+                        count++;
+                    }else {
+                        count++;
+                        System.out.println("1st Total length is: " + count);
+                        System.exit(0);
+                    }
+                } else {
+                    count++;
+                    System.out.println("2nd Total length is: " + count);
+                    System.exit(0);
+                }
+            }catch (Exception e){
+                flag=-9999;
+                System.out.println(e.getMessage());
+            }
+        }*/
+
+
+
+        //Sn = a[(rn – 1)/(r – 1)]  a is first term; r is the common ratio; n is  number of terms. r>1.
+        /*Scanner sc  = new Scanner(System.in);
+        System.out.print("Enter first term: ");
+        int firstTerm = sc.nextInt();
+        System.out.print("Enter common ratio: ");
+        int commonRatio = sc.nextInt();
+        System.out.print("Enter total number of terms: ");
+        int numberOfTerms = sc.nextInt();
+        int sN=0;
+            sN =sN+(firstTerm*((int)((Math.pow(commonRatio,numberOfTerms) - 1)/(commonRatio - 1))));
+            System.out.printf("sum of %d numbers is: %d",numberOfTerms,sN);*/
+
 
 
         //question Sn = n/2[2a + (n − 1) × d]

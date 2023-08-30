@@ -38,7 +38,7 @@ public class RoughMain {
         for (int i = 0; i < twoSectionsStuNames.length; i++) {
             for (int j = 0; j < twoSectionsStuNames[i].length; j++) {
 
-                System.out.print("The student name in section "+(i+1)+" : "+twoSectionsStuNames[i][j]);
+                System.out.print("The student name in section "+(i+1)+" : "+Arrays.toString(new String[] {twoSectionsStuNames[i][j]}));
                 System.out.println();
             }
             System.out.println("==============================================");
