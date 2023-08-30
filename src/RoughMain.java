@@ -3,10 +3,82 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
+
+        //jagged array
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the length of sections: ");
+        int lengthSections=sc.nextInt();
+
+        String [][] twoSectionsStuNames = new String[lengthSections][];
+
+        for (int i = 0; i < twoSectionsStuNames.length; i++) {
+            int j=i;
+            System.out.printf("Enter the Number of students in section %d: ",(j+1));
+            int lengthNumberOfStudents=sc.nextInt();
+            twoSectionsStuNames[i] = new String[lengthNumberOfStudents];
+            j=0;
+        }
+
+        for (int i = 0; i < twoSectionsStuNames.length; i++) {
+            int students=twoSectionsStuNames[i].length;
+            for (int j = 0; j < twoSectionsStuNames[i].length; j++) {
+                System.out.print("Enter "+students+" students' names' in the section "+(i+1)+" : ");
+                twoSectionsStuNames[i][j]=sc.next();
+                students--;
+            }
+        }
+        System.out.println("----------------------------------------------------");
+        for (int i = 0; i < twoSectionsStuNames.length; i++) {
+            for (int j = 0; j < twoSectionsStuNames[i].length; j++) {
+
+                System.out.print("The student name in section "+(i+1)+" : "+twoSectionsStuNames[i][j]);
+                System.out.println();
+            }
+            System.out.println("==============================================");
+        }
+
+
+
+
+
+
+        //Array 3d accessing style.
+        /*int[][][] list = new int[2][1][5];
+        int count = 1, valueStored = 0;
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < list.length; i++) {
+            for (int j = 0; j < list[i].length; j++) {
+                for (int k = 0; k < list[i][j].length; k++) {
+                    System.out.print(count + ". Enter the number: [" + i + "][" + j + "][" + k + "] ");
+                    list[i][j][k] = sc.nextInt(); // value saved to index
+                    valueStored = list[i][j][k]; //input is stored for use
+                    count++;
+                }
+            }
+        }
+        System.out.println("Values in the array are: ");
+
+        count = 1;
+        for (int i = 0; i < list.length; i++) {
+            for (int j = 0; j < list[i].length; j++) {
+                for (int k = 0; k < list[i][j].length; k++) {
+                    String valueRecievedFromArray = Arrays.toString(new int[] {list[i][j][k]}); //recieving array element.
+                    System.out.print(count + ". value @ index [" + i + "][" + j + "][" + k + "] : " + valueRecievedFromArray);
+                    System.out.println();
+                    count++;
+                }
+            }
+        }*/
+
+
 
 
         /*//adjusting image inside an image.
@@ -54,11 +126,6 @@ public class RoughMain {
                     System.out.println("connection closed.");
                 }
             }*/
-
-
-
-
-
 
 
         //created image border pink
