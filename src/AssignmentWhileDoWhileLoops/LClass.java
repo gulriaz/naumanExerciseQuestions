@@ -1,11 +1,11 @@
 package AssignmentWhileDoWhileLoops;
 
-public class LoopSideClass {
+public class LClass {
     //-----------------------------
 
     //program to find the sum of the series [ 1-X^2/2! +X^4/4! - .........]?
-    public float factorialFunc(int i,int x){
-
+    public float factorialFunc(int i,int x,float y){
+        int sum= (int)y;
         int resultFactorial=1;
 
         for(int j=1;j<=i;j++){
@@ -13,7 +13,9 @@ public class LoopSideClass {
         }
         float resultPower=(float)(i/resultFactorial);
         float finalResult=(float)Math.pow(x,resultPower);
-        System.out.println("X ="+x+"\n"+"Factorial is = "+ resultFactorial+"\n"+"result of power = "+ resultPower+"\n"+"result of whole = "+finalResult);
+        System.out.println("==> STEP DETAIL START<==");
+        System.out.println("X ="+x+"\n"+"Factorial is = "+ resultFactorial+"\n"+"result of power = "+ resultPower+"\n"+"result of whole = "+finalResult+"(added to the previous sum: "+sum+")");
+        System.out.println("==> STEP DETAIL ENDED<==");
         return finalResult;
     }
     //------------------------------

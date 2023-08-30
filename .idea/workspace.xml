@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="502ea7d8-1070-4a9e-99a2-cb1b9ae0bde4" name="Changes" comment="For Loop STARTED/Image read/write">
+    <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="sdaf">
+      <change afterPath="$PROJECT_DIR$/src/CImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopSideClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopSideClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopSideClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LoopsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoughClassSideUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughClassSideUsage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,144 +29,59 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2Tjxb7pXPn1rwPfszsquHMJxahg" />
+  <component name="ProjectId" id="2Uh7RJgtrXbvn3vcsX2bUtNuWUw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mypc/IdeaProjects/Exercise/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "onboarding.tips.debug.path": "C:/Users/mypc/IdeaProjects/Exercise2/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="502ea7d8-1070-4a9e-99a2-cb1b9ae0bde4" name="Changes" comment="" />
-      <created>1691570359576</created>
+      <changelist id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="" />
+      <created>1693379949224</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691570359576</updated>
+      <updated>1693379949224</updated>
     </task>
-    <task id="LOCAL-00001" summary="new setup">
+    <task id="LOCAL-00001" summary="sdaf">
       <option name="closed" value="true" />
-      <created>1691570964767</created>
+      <created>1693385188722</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1691570964767</updated>
+      <updated>1693385188722</updated>
     </task>
-    <task id="LOCAL-00002" summary="question 14">
-      <option name="closed" value="true" />
-      <created>1691624842474</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1691624842474</updated>
-    </task>
-    <task id="LOCAL-00003" summary="question 20, A2 switches all done.">
-      <option name="closed" value="true" />
-      <created>1691658362122</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1691658362122</updated>
-    </task>
-    <task id="LOCAL-00004" summary="question 20, A3 switches all done.">
-      <option name="closed" value="true" />
-      <created>1691658517151</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1691658517151</updated>
-    </task>
-    <task id="LOCAL-00005" summary="question 8, A4 While Loop">
-      <option name="closed" value="true" />
-      <created>1691692109050</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1691692109050</updated>
-    </task>
-    <task id="LOCAL-00006" summary="question 12, A4 While Loop">
-      <option name="closed" value="true" />
-      <created>1691737283209</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1691737283209</updated>
-    </task>
-    <task id="LOCAL-00007" summary="question 12, A4 While Loop">
-      <option name="closed" value="true" />
-      <created>1691737417513</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1691737417513</updated>
-    </task>
-    <task id="LOCAL-00008" summary="question 28, A4 While Loop COMPLETED">
-      <option name="closed" value="true" />
-      <created>1692431400835</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1692431400835</updated>
-    </task>
-    <task id="LOCAL-00009" summary="For Loop STARTED/Image read/write">
-      <option name="closed" value="true" />
-      <created>1692771415618</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1692771415618</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new setup" />
-    <MESSAGE value="question 14" />
-    <MESSAGE value="question 20, A2 switches all done." />
-    <MESSAGE value="question 20, A3 switches all done." />
-    <MESSAGE value="question 8, A4 switches all done." />
-    <MESSAGE value="question 8, A4 While Loop" />
-    <MESSAGE value="question 12, A4 While Loop" />
-    <MESSAGE value="question 28, A4 While Loop COMPLETED" />
-    <MESSAGE value="For Loop STARTED/Image read/write" />
-    <option name="LAST_COMMIT_MESSAGE" value="For Loop STARTED/Image read/write" />
+    <MESSAGE value="sdaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdaf" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
