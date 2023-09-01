@@ -7,7 +7,177 @@ public class LMain {
 
         //==================FOR LOOP===================================
 
-        //question string to length without function
+        //question not done. 
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt();
+
+        for (int row = 1; row <= numberOfLines; row++) {
+            for (int col = 1; col <= numberOfLines; col++) {
+
+                int write = 0;
+
+                if (col == 5) {
+                    System.out.print(write + 1);
+                    if (row != 1) {
+                            int rightside = row - 1;
+                            while (rightside >= 1) {
+                                col = col + 1;
+                                System.out.print(write + row);
+                                rightside--;
+                            }
+                            col = 5;
+                            int leftside = row - 1;
+                            while (leftside >= 1) {
+                                col = col - 1;
+                                System.out.print(write + row);
+                                leftside--;
+                            }
+                    }
+                } else System.out.print(" ");
+            }
+            System.out.println();
+        }*/
+
+
+
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt(), valuesSaved=-9999;
+        for (int row = 1; row <= numberOfLines; row++) {
+            for (int col = numberOfLines; col >= row; col--) {
+                valuesSaved=col;
+                if (col==row) {
+                    while (col>=1) {
+                        System.out.print(row);
+                        col--;
+                    }
+                    col=valuesSaved;
+                    valuesSaved=valuesSaved*(-1);
+//                    System.out.print(valuesSaved);
+                    if(col !=1) {
+                        col = -1;//reset to equal row=column
+                        while (col > valuesSaved) {
+                            System.out.print(row);
+                            col--;
+                        }
+                    }
+
+                }else System.out.print(" ");
+            }
+            System.out.println();
+
+        }*/
+
+
+
+
+
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt(), valuesSaved=-9999;
+        for (int row = 1; row <= numberOfLines; row++) {
+            for (int col = numberOfLines; col >= row; col--) {
+                 valuesSaved=col;
+                if (col==row) {
+                    while (col>=1) {
+                        System.out.print("+");
+                        col--;
+                    }
+                    col=valuesSaved;
+                    valuesSaved=valuesSaved*(-1);
+//                    System.out.print(valuesSaved);
+                    if(col !=1) {
+                        col = -1;//reset to equal row=column
+                        while (col > valuesSaved) {
+                            System.out.print("+");
+                            col--;
+                        }
+                    }
+
+                }else System.out.print(" ");
+            }
+            System.out.println();
+
+        }*/
+
+
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt();
+        for (int row = 0; row < numberOfLines; row++) {
+            for (int col = numberOfLines-row; col >= 1; col--) {
+                    int spaces=row+1;
+                    while (spaces>=1){
+                        System.out.print(" ");
+
+                        spaces--;
+                    }
+                    while (col>=1) {
+                        System.out.print("+");
+                    col--;
+                    }
+            }
+            System.out.println();
+        }*/
+
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt();
+        for (int row = 1; row <= numberOfLines; row++) {
+            for (int col = numberOfLines; col >= row; col--) {
+
+                    if (col==row) {
+                    while (col>=1) {
+                        System.out.print("+");
+                    col--;
+                    }
+
+
+                }else System.out.print(" ");
+            }
+            System.out.println();
+
+        }*/
+
+
+
+
+/*        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines = sc.nextInt();
+        int start = numberOfLines;
+        for (int i = start; i >= 1; i--) {
+            for (int j = numberOfLines; j >= 1; j--) {
+                System.out.print("* ");
+            }
+            numberOfLines--;
+            System.out.println();
+
+        }*/
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of lines: ");
+        int numberOfLines=sc.nextInt();
+
+        for (int i = 1; i <= numberOfLines; i++) {
+            for (int j = 1; j <=i ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        
+        }*/
+
+//question string to length without function
         /*Scanner sc  = new Scanner(System.in);
         System.out.print("Enter first term: ");
         String firstTerm = sc.next();
@@ -38,8 +208,7 @@ public class LMain {
         }*/
 
 
-
-        //Sn = a[(rn – 1)/(r – 1)]  a is first term; r is the common ratio; n is  number of terms. r>1.
+//Sn = a[(rn – 1)/(r – 1)]  a is first term; r is the common ratio; n is  number of terms. r>1.
         /*Scanner sc  = new Scanner(System.in);
         System.out.print("Enter first term: ");
         int firstTerm = sc.nextInt();
@@ -52,10 +221,9 @@ public class LMain {
             System.out.printf("sum of %d numbers is: %d",numberOfTerms,sN);*/
 
 
-
-        //question Sn = n/2[2a + (n − 1) × d]
-        //n is total number of terms.   a is first number or starting number. d is difference between first and second number.
-        //Sn is sum of all Arithmetic progression numbers.
+//question Sn = n/2[2a + (n − 1) × d]
+//n is total number of terms.   a is first number or starting number. d is difference between first and second number.
+//Sn is sum of all Arithmetic progression numbers.
 /*
         Scanner sc = new Scanner(System.in);
         int sN=0;
@@ -91,7 +259,7 @@ public class LMain {
         System.out.println("Decimal number: "+decimalNumberPacked+" of Binary: "+binaryNumber);*/
 
 
-    //question decimal to binary
+//question decimal to binary
         /*Scanner sc = new Scanner(System.in);
         System.out.print("Enter a value: ");
 
@@ -140,7 +308,7 @@ public class LMain {
         }*/
 
 
-    //question fibonacci series
+//question fibonacci series
 /*
         int previousValueIndex = 0, saveForLoopCounterPosition = 0, currentValueIndex = 0, previousPreceedingValueIndex = 0, sum = 0;
         Scanner sc = new Scanner(System.in);
@@ -181,7 +349,7 @@ public class LMain {
 */
 
 
-    //question
+//question
         /*Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of X: ");
         int xInput = sc.nextInt();
@@ -205,7 +373,7 @@ public class LMain {
         }
         System.out.println("sum of series is: "+sum);*/
 
-    //question
+//question
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of X: ");
@@ -239,7 +407,7 @@ public class LMain {
         System.out.println("===> Finally; the sum of series is: " + resultOfExpression);*/
 
 
-    //question
+//question
         /*int sum=0;
         StringBuilder str = new StringBuilder();
 
@@ -253,7 +421,7 @@ public class LMain {
         }*/
 
 
-    //q11 harmonic series. ∑ n = 1 ∞ 1 n = 1 + 1 2 + 1 3 + 1 4 + 1 5 + ⋯
+//q11 harmonic series. ∑ n = 1 ∞ 1 n = 1 + 1 2 + 1 3 + 1 4 + 1 5 + ⋯
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         StringBuilder str = new StringBuilder();
@@ -289,7 +457,7 @@ public class LMain {
         }*/
 
 
-    //q10
+//q10
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of X: ");
@@ -371,8 +539,8 @@ public class LMain {
         }
         System.out.printf("sum of ODD values (%d) is: %d",count,sum);*/
 
-    //==================Do While Loop Assignment===================
-    //questionlast
+//==================Do While Loop Assignment===================
+//questionlast
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         int number1 = 0, previous = 0, largest=0, smallest=0, set = 1;
@@ -451,7 +619,7 @@ public class LMain {
             System.out.println("it is not a prime number.");
         }else System.out.println("it is a prime number.");*/
 
-    //q4
+//q4
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number(base).");
@@ -474,7 +642,7 @@ public class LMain {
         System.out.println("total sum of even values: "+sumEven);
         System.out.println("total sum of odd values: "+sumOdd);*/
 
-    //q2
+//q2
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number(base).");
@@ -488,7 +656,7 @@ public class LMain {
 */
 
 
-    //q1
+//q1
 /*
         LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
@@ -503,8 +671,8 @@ public class LMain {
         System.out.println("value is: "+product);
 */
 //==================While Loop Assignment======================
-    //question28
-    //highest common factor
+//question28
+//highest common factor
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -559,7 +727,7 @@ public class LMain {
         }*/
 
 
-    //Highest common multiple
+//Highest common multiple
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first number : ");
@@ -596,7 +764,7 @@ public class LMain {
 
         }*/
 
-    //question27
+//question27
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first number : ");
@@ -634,7 +802,7 @@ public class LMain {
         }*/
 
 
-    //question26
+//question26
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -661,7 +829,7 @@ public class LMain {
         System.out.println(str);*/
 
 
-    //question25
+//question25
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -710,7 +878,7 @@ public class LMain {
         System.out.println();
         System.out.printf("Nines': %s",cNine);*/
 
-    //question24
+//question24
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -759,7 +927,7 @@ public class LMain {
         System.out.println();
         System.out.printf("Nines': %d",cNine);*/
 
-    //question23
+//question23
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -785,7 +953,7 @@ public class LMain {
         }else System.out.println("This is NOT an Armstrong number.");*/
 
 
-    //question22
+//question22
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
@@ -821,7 +989,7 @@ public class LMain {
         }else System.out.println("it is not strong value.");*/
 
 
-    //question21
+//question21
 /*        LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -840,7 +1008,7 @@ public class LMain {
         }else System.out.println("it is not palindrome.");*/
 
 
-    //question20
+//question20
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -954,7 +1122,7 @@ public class LMain {
         System.out.println("reverse of value is: "+val3);*/
 
 
-    //question19
+//question19
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a digit: ");
@@ -970,7 +1138,7 @@ public class LMain {
         System.out.println("product of all digits is: "+productValue);*/
 
 
-    //question18
+//question18
        /* LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a digit: ");
@@ -986,7 +1154,7 @@ public class LMain {
         System.out.println("Sum of all digits is: "+sum);*/
 
 
-    //question17
+//question17
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any number: ");
@@ -1015,7 +1183,7 @@ public class LMain {
         System.out.println("New String is: "+l.getStringNewValueUserInput());*/
 
 
-    //question16
+//question16
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any number: ");
@@ -1047,7 +1215,7 @@ public class LMain {
         System.out.println("Sum of first and last digit is: "+sum);*/
 
 
-    //question15
+//question15
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any number: ");
@@ -1069,7 +1237,7 @@ public class LMain {
             productValue++;
         }*/
 
-    //question14
+//question14
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any number: ");
@@ -1101,7 +1269,7 @@ public class LMain {
         System.out.println("Total number of digits are: "+(productValue));*/
 
 
-    //question13
+//question13
 /*
         LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
@@ -1134,7 +1302,7 @@ public class LMain {
         System.out.println("Loop Terminated.");
 */
 
-    //question12
+//question12
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any number: ");
@@ -1153,7 +1321,7 @@ public class LMain {
         if(value==2) System.out.println(l.getIntValueUserInput()+" is a prime number.");
         else System.out.println(l.getIntValueUserInput()+" it is not a prime number.");*/
 
-    //question11
+//question11
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -1177,7 +1345,7 @@ public class LMain {
         System.out.println();
         System.out.printf("Total number of negatives' : %d",l.getCounterNegativeValues());*/
 
-    //question10
+//question10
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -1198,7 +1366,7 @@ public class LMain {
             productValue++;
         }*/
 
-    //question9
+//question9
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -1217,7 +1385,7 @@ public class LMain {
             productValue++;
         }*/
 
-    //question8
+//question8
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         int productValue,j=1,k=1;
@@ -1229,7 +1397,7 @@ public class LMain {
         }
         System.out.printf("cube of an integer(%d) is: %d",productValue,k);*/
 
-    //question7
+//question7
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
         int sum=0;
@@ -1261,7 +1429,7 @@ public class LMain {
         System.out.println();
         System.out.printf("Total numbers(%d) and their avg is: %.2f",productValue,(float)(sum/productValue));*/
 
-    //question6
+//question6
         /*LClass l = new LClass();
         Scanner sc = new Scanner(System.in);
 
@@ -1274,7 +1442,7 @@ public class LMain {
         }*/
 
 
-    //question5
+//question5
 /*
         LClass loop = new LClass();
         Scanner sc = new Scanner(System.in);
@@ -1289,7 +1457,7 @@ public class LMain {
         System.out.printf("factorial(%d) is: %d",userRequestedFactorialIntValue,loop.getProductOfNaturalNumbers());
 */
 
-    //question4
+//question4
         /*LClass loop = new LClass();
         int productValue = 1;
         while (productValue <= 10) {
@@ -1301,7 +1469,7 @@ public class LMain {
             productValue++;
         }*/
 
-    //question3
+//question3
         /*LClass loop = new LClass();
         int productValue = 1;
         while (productValue <= 10) {
@@ -1311,7 +1479,7 @@ public class LMain {
             productValue++;
         }*/
 
-    //question2
+//question2
         /*LClass loop = new LClass();
         int productValue = 1;
         while (productValue <= 10) {
@@ -1320,7 +1488,7 @@ public class LMain {
         }
         System.out.println("Sum of first 10 natural numbers are: " + loop.getSumOfNaturalNumbers());*/
 
-    //question1
+//question1
         /*int productValue=1;
         while (productValue <=10) {
             System.out.println("Natural number: "+productValue);
@@ -1328,5 +1496,5 @@ public class LMain {
         }*/
 
 
-}
+    }
 }

@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -9,8 +11,15 @@ import java.util.Scanner;
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        //jagged array
+        //linked list singular
 
+
+
+
+
+
+        //jagged array
+/*
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the length of sections: ");
@@ -42,7 +51,7 @@ public class RoughMain {
                 System.out.println();
             }
             System.out.println("==============================================");
-        }
+        }*/
 
 
 
