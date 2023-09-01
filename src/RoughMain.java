@@ -11,11 +11,6 @@ import java.util.Scanner;
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        //linked list singular
-
-
-
-
 
 
         //jagged array
