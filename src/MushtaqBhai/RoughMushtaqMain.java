@@ -1,13 +1,17 @@
 package MushtaqBhai;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class RoughMushtaqMain {
     public static void main(String[] args) {
 
+LinklistFunctions<String> l = new LinklistFunctions<>();
+
+l.addALinkInThelist("gulraiz");
+l.addALinkInThelist("javaid");
+l.addALinkInThelist("joyia");
+
+l.printLinklist();
+
+/*
         ArrayList <String> stuNameIUB= new ArrayList<String>(20);
 
         stuNameIUB.add("Mushtaq");
@@ -24,6 +28,7 @@ public class RoughMushtaqMain {
         System.out.println("stuNames size: "+stuUOL.size());
         System.out.println("stuName index: "+stuUOL.indexOf("Irfan"));
         System.out.println(stuUOL);
+*/
 
 
 

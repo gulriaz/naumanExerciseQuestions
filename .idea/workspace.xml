@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="Mushtaq bhai file updated">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedListOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedlistMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedlistMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MushtaqBhai/RoughMushtaqMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MushtaqBhai/RoughMushtaqMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
