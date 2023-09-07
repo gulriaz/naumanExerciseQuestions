@@ -5,12 +5,90 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
+        //arraylist  with mushtaq bhai.
+        /*int len=5;
+        int[] numbers = new int[len];
+        int[] numbers2 = new int[len];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print("Enter a value: ");
+            numbers[i]=(sc.nextInt());
+        }
+        for (int i = 0; i < numbers.length; i++) {
+            numbers2[i]=numbers[i];
+        }
+        System.out.println(Arrays.toString(numbers2));*/
+
+
+        //qusetion umar bhai allamiqbal wala problems.
+        /*Scanner sc = new Scanner(System.in);
+        int valueInt;
+        char status = 'y';
+
+        while (status == 'y' || status == 'Y') {
+            valueInt = 0;
+            while (valueInt <= 0) {
+                System.out.println("Enter a number: ");
+                valueInt = sc.nextInt();
+            }
+
+            if (valueInt % 2 == 0) {
+                System.out.println(valueInt + ": even entered.");
+            } else System.out.println(valueInt + ": odd entered.");
+
+            System.out.println("===============================");
+            System.out.println(" press y to run again: ");
+            status = sc.next().charAt(0);
+        }
+        System.out.println("programme forcefully stopped.");
+*/
+
+//again practice of getting part of image for mushtaq bhai
+/*
+        BufferedImage sourceImageTV =null, sourceImageButterfly=null;
+        File file = null, file2=null;
+        Scanner sc = new Scanner(System.in);
+        try {
+            file = new File("C:\\Users\\mypc\\Desktop\\horseImage.jpg");
+            file2 = new File("C:\\Users\\mypc\\Desktop\\butterfly.jpeg");
+            sourceImageTV = ImageIO.read(file);
+            sourceImageButterfly = ImageIO.read(file2);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        if (sourceImageTV != null) {
+            int widthPlusFive = sourceImageTV.getWidth();
+            System.out.println("Max column: "+widthPlusFive);
+            int heightPlusFive = sourceImageTV.getHeight();
+            System.out.println("Max row: "+heightPlusFive);
+
+            BufferedImage effectImage = new BufferedImage(widthPlusFive, heightPlusFive, sourceImageTV.getType());
+            for (int row = 0; row < effectImage.getHeight(); row++) {
+                for (int col = 0; col < effectImage.getWidth(); col++) {
+                    if(row>=5 && row<=345 && col>=10 && col<=461) {
+
+                        effectImage.setRGB(col,row,sourceImageTV.getRGB(col,row));
+
+                    }
+                    else
+                        effectImage.setRGB(col,row,Color.GRAY.getRGB());
+                }
+            }
+            try {
+                ImageIO.write(effectImage, "png", new File("C:\\Users\\mypc\\Desktop\\Tv_cpy.png"));
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            } finally {
+                System.out.println("connection closed.");
+            }
+        }*/
 
 
         //jagged array
@@ -49,10 +127,6 @@ public class RoughMain {
         }*/
 
 
-
-
-
-
         //Array 3d accessing style.
         /*int[][][] list = new int[2][1][5];
         int count = 1, valueStored = 0;
@@ -83,10 +157,8 @@ public class RoughMain {
         }*/
 
 
-
-
-        /*//adjusting image inside an image.
-            BufferedImage sourceImageTV =null, sourceImageButterfly=null;
+        //adjusting image inside an image.
+           /* BufferedImage sourceImageTV =null, sourceImageButterfly=null;
             File file = null, file2=null;
             Scanner sc = new Scanner(System.in);
             try {
@@ -129,8 +201,8 @@ public class RoughMain {
                 } finally {
                     System.out.println("connection closed.");
                 }
-            }*/
-
+            }
+*/
 
         //created image border pink
         /*char status = 'y';
@@ -139,7 +211,7 @@ public class RoughMain {
             File file = null, file2=null;
             Scanner sc = new Scanner(System.in);
             try {
-                file = new File("C:\\Users\\mypc\\Desktop\\Mirai_LCD_TV.jpeg");
+                file = new File("C:\\Users\\mypc\\Desktop\\game.png");
 //                file2 = new File("C:\\Users\\mypc\\Desktop\\Green.png");
                 sourceImageTiberium = ImageIO.read(file);
             } catch (Exception ex) {
@@ -147,11 +219,11 @@ public class RoughMain {
             }
             if (sourceImageTiberium != null) {
                 int widthPlusFive = sourceImageTiberium.getWidth()+40;
-//                System.out.println(sourceImageTiberium.getWidth());
-//                System.out.println(widthPlusFive);
+                System.out.println(sourceImageTiberium.getWidth());
+                System.out.println(widthPlusFive);
                 int heightPlusFive = sourceImageTiberium.getHeight()+40;
-//                System.out.println(sourceImageTiberium.getHeight());
-//                System.out.println(heightPlusFive);
+                System.out.println(sourceImageTiberium.getHeight());
+                System.out.println(heightPlusFive);
 
 //                int innerRow=0, innerCol=0;
                 BufferedImage effectImage = new BufferedImage(widthPlusFive, heightPlusFive, sourceImageTiberium.getType());

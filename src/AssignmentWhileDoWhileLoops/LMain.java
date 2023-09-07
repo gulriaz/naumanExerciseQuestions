@@ -8,36 +8,43 @@ public class LMain {
         //==================FOR LOOP===================================
 
         //question not done. 
-        /*Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of lines: ");
-        int numberOfLines = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the number of lines: ");
+//        int numberOfLines = sc.nextInt();
+        int start, end, mid;
+        int count = 1;
+        start = end = mid = 5;
+        for (int row = 1; row <= 5; row++) {
+//            System.out.println("start: "+start+"row: "+row);
+//            int temp=start;
+//            start=mid;
+//            int val=mid-temp;
+            for (int col = 1; col <= 10; col++) {
+//                System.out.println("end: "+end+"col: "+col);
+                if (col >= start && col <= end) {
+                    
+                    System.out.print("*");
+                    count++;
+                }
 
-        for (int row = 1; row <= numberOfLines; row++) {
-            for (int col = 1; col <= numberOfLines; col++) {
+//                if (col >= temp && col < mid) {
+//                    System.out.print(" ");
+//                    System.out.print(5);
+//                    val--;
+//                }
 
-                int write = 0;
 
-                if (col == 5) {
-                    System.out.print(write + 1);
-                    if (row != 1) {
-                            int rightside = row - 1;
-                            while (rightside >= 1) {
-                                col = col + 1;
-                                System.out.print(write + row);
-                                rightside--;
-                            }
-                            col = 5;
-                            int leftside = row - 1;
-                            while (leftside >= 1) {
-                                col = col - 1;
-                                System.out.print(write + row);
-                                leftside--;
-                            }
-                    }
-                } else System.out.print(" ");
-            }
+            else System.out.print(" ");
+        }
+        if (row < 5) {
+            start--;
+            end++;
+        }
+        count = 1;
+        System.out.println();
+            System.out.print(end-start);
             System.out.println();
-        }*/
+    }
 
 
 
@@ -1496,5 +1503,5 @@ public class LMain {
         }*/
 
 
-    }
+}
 }
