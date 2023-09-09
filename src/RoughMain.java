@@ -5,12 +5,29 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
+
+        //Concept of Inheritance.
+Buffalo b = new Buffalo();
+        System.out.println("Buffalo digestive system produces: "+b.buffaloGas);
+        System.out.println("Buffalo gives: "+b.buffaloMilk);
+        System.out.println("Herbivore eats: "+b.herbivoreEats);
+        System.out.println("Mammals birth: "+b.mamelsBirth);
+        System.out.println("Mammals eat: "+b.mamelsEat);
+        System.out.println("Mammals walk: "+b.mamelsWalk);
+        System.out.println("Mammals Danger like: "+b.animalDanger);
+        System.out.println("Mammals perfume like: "+b.animalPerfume);
+        System.out.println("Mammals tail like: "+b.animalTail);
+//--------------------------------------------------------------------
+
+        CAnimal a = new CMamels();
+        CHerbivore c = new Buffalo();
+
+        //parent class unable to access child variables.??? parent class holds the objects of child class.
+
 
         //arraylist  with mushtaq bhai.
         /*int len=5;

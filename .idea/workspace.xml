@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="Mushtaq bhai file updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentWhileDoWhileLoops/LMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssignmentArrays/ArrayMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentArrays/ArrayMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +43,11 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mypc/IdeaProjects/Exercise2/src/Main.java&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mypc\IdeaProjects\Exercise2\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693410315370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mushtaq bhai file updated">
+      <option name="closed" value="true" />
+      <created>1694079523121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694079523121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

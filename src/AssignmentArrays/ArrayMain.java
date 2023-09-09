@@ -8,7 +8,7 @@ public class ArrayMain {
 
 
         //question not from exercise; delete an element from array.
-        ArrayList<String> names = new ArrayList<>() {{
+        /*ArrayList<String> names = new ArrayList<>() {{
             add("ali");
             add("asim");
 
@@ -34,7 +34,7 @@ public class ArrayMain {
             System.out.println("do you want to continue: press y");
             ch=sc.next().charAt(0);}else {System.out.println("list is empty."); System.exit(0);}
         }
-        System.out.println("good bye!");
+        System.out.println("good bye!");*/
 
 
         /*String[] names = new String[]{"ali", "asim", "qasim", "mujtaba", "mustafa"};
