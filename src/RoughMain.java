@@ -1,3 +1,7 @@
+import InheritanceOverriding.Bicycle;
+import InheritanceOverriding.Personal;
+import InheritanceOverriding.Plane;
+import InheritanceOverriding.Shared;
 import org.w3c.dom.Node;
 
 import javax.imageio.ImageIO;
@@ -10,21 +14,76 @@ import java.util.*;
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        //Concept of Inheritance.
-Buffalo b = new Buffalo();
-        System.out.println("Buffalo digestive system produces: "+b.buffaloGas);
-        System.out.println("Buffalo gives: "+b.buffaloMilk);
-        System.out.println("Herbivore eats: "+b.herbivoreEats);
-        System.out.println("Mammals birth: "+b.mamelsBirth);
-        System.out.println("Mammals eat: "+b.mamelsEat);
-        System.out.println("Mammals walk: "+b.mamelsWalk);
-        System.out.println("Mammals Danger like: "+b.animalDanger);
-        System.out.println("Mammals perfume like: "+b.animalPerfume);
-        System.out.println("Mammals tail like: "+b.animalTail);
+
+
+
+
+
+
+        //practice
+       /* ArrayList<inheritanceRough.CAnimal> animal = new ArrayList<>();
+        animal.add(new inheritanceRough.CMamels());
+        animal.add(new inheritanceRough.CRaptiles());
+
+//        animal.add(new inheritanceRough.CCarnivor());
+//        animal.add(new inheritanceRough.CHerbivore());
+
+        animal.add(new inheritanceRough.Buffalo());
+
+
+        for (inheritanceRough.CAnimal ani:animal) {
+
+            if(ani instanceof inheritanceRough.Buffalo){
+                inheritanceRough.Buffalo c = (inheritanceRough.Buffalo)ani;
+                System.out.println("-----------------");
+                c.show();
+                System.out.println("-----------------");
+            }else {
+//                ani.show();
+                System.out.println(ani.toString());
+            }
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        inheritanceRough.CMamels c = new inheritanceRough.CMamels();
+        //Object d = new Object();//
+        //d.wait(200,0);//
+        System.out.println(c.toString(0));
+        System.out.println(c.toString());
+*/
+
+        //concept of inheritance with vehicles example.
+        /*inheritanceRough.Vehicles v= new inheritanceRough.Vehicles();
+        System.out.println(v.vehCat);
+        inheritanceRough.Car v2 = new inheritanceRough.Car();
+        System.out.println();*/
+
+
+
+        //Concept of Inheritance with animal examples.
+/*
+        inheritanceRough.Buffalo b = new inheritanceRough.Buffalo();
+        System.out.println("inheritanceRough.Buffalo digestive system produces: " + b.buffaloGas);
+        System.out.println("inheritanceRough.Buffalo gives: " + b.buffaloMilk);
+        System.out.println("Herbivore eats: " + b.herbivoreEats);
+        System.out.println("Mammals birth: " + b.mamelsBirth);
+        System.out.println("Mammals eat: " + b.mamelsEat);
+        System.out.println("Mammals walk: " + b.mamelsWalk);
+        System.out.println("Mammals Danger like: " + b.animalDanger);
+        System.out.println("Mammals perfume like: " + b.animalPerfume);
+        System.out.println("Mammals tail like: " + b.animalTail);
+*/
 //--------------------------------------------------------------------
 
-        CAnimal a = new CMamels();
-        CHerbivore c = new Buffalo();
+//        inheritanceRough.CAnimal a = new inheritanceRough.CMamels();
+//
+//        //done casting animal to mamels just for using them.
+//        inheritanceRough.CMamels a1 = (inheritanceRough.CMamels) a;
+
+
+
+        //        inheritanceRough.CHerbivore c = new inheritanceRough.Buffalo();
 
         //parent class unable to access child variables.??? parent class holds the objects of child class.
 
@@ -457,10 +516,10 @@ try {
         /*String sourceFile = "C:\\Users\\mypc\\Desktop\\game.png";
         String destinationFile = "C:\\Users\\mypc\\Desktop\\gamecpy.png";
 
-        while (CImage.status=='y') {
-            BufferedImage sourceImage = CImage.imagePathSet(sourceFile);
-            BufferedImage effectImage = CImage.imageToPixel(sourceImage);
-            CImage.imageSavedToDisk(effectImage, "png", destinationFile);
+        while (inheritanceRough.CImage.status=='y') {
+            BufferedImage sourceImage = inheritanceRough.CImage.imagePathSet(sourceFile);
+            BufferedImage effectImage = inheritanceRough.CImage.imageToPixel(sourceImage);
+            inheritanceRough.CImage.imageSavedToDisk(effectImage, "png", destinationFile);
         }*/
 
         //color splashing without OOP.

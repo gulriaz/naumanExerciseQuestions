@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="Mushtaq bhai file updated">
+      <change afterPath="$PROJECT_DIR$/src/inheritanceRough/CAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inheritanceRough/CMamels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/inheritanceRough/CRaptiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssignmentArrays/ArrayMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentArrays/ArrayMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buffalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritanceRough/Buffalo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CCarnivor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritanceRough/CCarnivor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CHerbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritanceRough/CHerbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritanceRough/CImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMamels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CRaptiles.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
