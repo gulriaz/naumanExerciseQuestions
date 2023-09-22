@@ -10,11 +10,30 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.function.Consumer;
 
 public class RoughMain {
     public static void main(String[] args) throws RuntimeException, Exception {
 
+        ArrayList<Integer> list = new ArrayList() {{add(12);add(26);}};
+        list.add(25);
+        list.add(26);
+        list.add(0);
+        list.add(2);
+        list.add(30);
 
+        list.sort(null);
+        System.out.println(Arrays.toString(list.toArray()));
+
+
+        Consumer<Integer> readingInt = n->{ System.out.println(n);};
+        list.forEach(readingInt);
+
+
+        System.out.println();
+        for (int i: list) {
+            System.out.println(i);
+        }
 
 
 
