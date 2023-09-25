@@ -1,7 +1,6 @@
 package InterfactingPractice04;
 
 public interface TacticalAtrributes {
-
     int RANGE_SOILDER = 500;
 
     void shoot();

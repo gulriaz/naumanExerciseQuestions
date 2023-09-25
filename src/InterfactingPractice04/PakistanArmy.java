@@ -1,6 +1,11 @@
 package InterfactingPractice04;
 
 public class PakistanArmy implements TacticalAtrributes{
+
+    static {
+        System.out.println("static block called PakArmy.");
+    }
+
     String flagPakistani = "Pakistan Flag";
     String unitPakistani = "Infantry Pakistani";
 

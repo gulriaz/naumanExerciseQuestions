@@ -9,13 +9,224 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZonedDateTime;
+import java.time.chrono.HijrahDate;
+import java.time.chrono.HijrahEra;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
+import java.time.temporal.TemporalField;
 import java.util.*;
+import java.util.List;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class RoughMain {
+    {
+        //initializer block
+        int n = 3;
+        System.out.println(n);
+    }
+
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        ArrayList<Integer> list = new ArrayList() {{add(12);add(26);}};
+
+        //HashMap
+        /*HashMap<String,String> hMap = new HashMap<>();
+        hMap.put("x","y");
+        hMap.put("javaid","gulraiz");
+        hMap.put("a","b");
+
+        System.out.println(hMap);*/
+
+
+        //initializer block
+        //we know if any class has initializer block than block is called with the
+        //constructor of that class.
+
+        /*  RoughMain r = new RoughMain();*/
+
+
+        //revision of list outside main handling.
+        /*Consumer<Integer> valueSet = n-> {
+
+            if( n.equals(3)){
+                System.out.println("valueSet is accessed & improved.");
+                n = n+3;
+                System.out.println("Now: "+n);
+            }
+        };
+
+        List<Integer> l = Arrays.asList(3,5);
+        l.forEach(valueSet);*/
+
+
+        //revision of list functions
+        ZonedDateTime z = ZonedDateTime.now();
+        System.out.println(z);
+//        LocalTime l = LocalTime.now();
+//        System.out.println(l);
+        System.out.println();
+        ArrayList<String> str = new ArrayList<>() {{
+            add("Black");
+            add("Indigo");
+        }};
+
+        String[] newArray = new String[str.size()];
+
+        str.toArray(newArray); // Arraylist is saved into an array newArray
+
+        Stream<String> stre = Arrays.stream(newArray); // converting array to stream.
+
+        List<String> newListFromArrayList = stre.collect(Collectors.toList()); // finally converted to list.
+
+        Consumer<String> toLowerCase = n -> {
+            System.out.println("lowercase conversion: " + n.toLowerCase());
+        };
+
+        Consumer<String> toUpperCase = n -> {
+            System.out.println("uppercase conversion: " + n.toUpperCase());
+        };
+
+        Consumer<String> toInItCap = n -> {
+            System.out.println("No method implemented");
+        };
+
+        newListFromArrayList.forEach(toLowerCase);
+        newListFromArrayList.forEach(toUpperCase);
+        newListFromArrayList.forEach(toInItCap);
+
+/*
+        //revision List class.
+        ZonedDateTime z = ZonedDateTime.now();
+//        System.out.println(z);
+        LocalTime l = LocalTime.now();
+        System.out.println(l);
+
+        ArrayList<String> str = new ArrayList<>() {{
+            add("Black");
+            add("Indigo");
+        }};
+
+//        List<String> colors = Arrays.asList("Red", "Green", "Blue", "Orange", "White");
+        List<String> colors = Arrays.asList("Red", "Red","Red", "White");
+        //when list is created it size is fixed and cannot add any new item.
+
+        String[] newArray = new String[str.size()];
+
+        str.toArray(newArray); // Arraylist is saved into an array newArray
+
+        Stream<String> stre = Arrays.stream(newArray); // converting array to stream.
+
+        List<String> newListFromArrayList = stre.collect(Collectors.toList()); // finally converted to list.
+
+        colors.addAll(0, newListFromArrayList);
+
+        System.out.println("Arraylist Original "+str);
+        for (int i = 0; i < colors.size(); i++) {
+
+            if(str.contains(colors.get(i))){
+
+            }else {
+                str.add(colors.get(i));
+            }
+        }
+        HashSet<String> h = new HashSet<>(str);
+
+        System.out.println("HashSET: "+h);
+
+        System.out.println("Colors list "+colors);*/
+
+
+//        Collectors.toList();
+//        colors.addAll(newArray);
+//        if(colors.containsAll(str)) {
+//            System.out.println("all match found.");
+//        }
+//        else System.out.println("all record not matched.");
+
+
+        //learning HashSet table.
+        /*LocalTime timeCurrent = LocalTime.now();
+        DateTimeFormatter timeformat = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+        String newTimeCurrentFormatted = timeCurrent.format(timeformat);
+
+        System.out.println("welcome! " + newTimeCurrentFormatted);
+
+        //starting HashSet table
+
+        HashSet<String> vehicles = new HashSet<>();
+        vehicles.add("Boolan");
+        vehicles.add("Honda city");
+        vehicles.add("Honda civic");
+        vehicles.add("Prius");
+
+        System.out.println("Printing complete HashSet: ");
+//        System.out.println(vehicles);
+
+        Consumer<String> namesOfItems = n ->{
+            String s = n + ".";
+            System.out.println(s);
+        };
+
+        vehicles.forEach(namesOfItems);*/
+
+
+        //creating hashmap key,value concept.  put, get, clear, remove, size
+
+/*
+        LocalTime timeCurrent = LocalTime.now();
+        DateTimeFormatter timeformat = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+        String newTimeCurrentFormatted = timeCurrent.format(timeformat);
+
+        System.out.println("welcome! "+ newTimeCurrentFormatted);
+
+        HashMap<String,String> citiesOfCapitalStates = new HashMap<String,String>();
+        citiesOfCapitalStates.put("Pakistan","Islamaabd");
+        citiesOfCapitalStates.put("Germany","Berlin");
+
+        System.out.println(citiesOfCapitalStates);
+        System.out.println(citiesOfCapitalStates.size());
+        System.out.println();
+
+        System.out.print("searching hashmap for Pakistan capital:");
+        System.out.print(citiesOfCapitalStates.get("Pakistan"));
+
+        System.out.println();
+        System.out.print("!!!Germany removed!!! ");
+        citiesOfCapitalStates.remove("Germany");
+
+        System.out.println(citiesOfCapitalStates);
+        System.out.println(citiesOfCapitalStates.size());
+        System.out.println();
+
+        System.out.println("Clear all hashmap: ");
+        citiesOfCapitalStates.clear();
+
+        System.out.println(citiesOfCapitalStates);
+        System.out.println(citiesOfCapitalStates.size());
+
+
+        System.out.println("good bye!");
+*/
+
+
+        //date time settings: w3schools
+//        LocalTime timeget = LocalTime.now();
+//        DateTimeFormatter timeformat = DateTimeFormatter.ofPattern("HH:mm:ss");
+//
+//        String newTimeGetFormatted=timeget.format(timeformat);
+//
+//        System.out.println(newTimeGetFormatted);
+
+
+        //holala jhingalala important.
+        /*ArrayList<Integer> list = new ArrayList() {{add(12);add(26);}};
         list.add(25);
         list.add(26);
         list.add(0);
@@ -25,18 +236,15 @@ public class RoughMain {
         list.sort(null);
         System.out.println(Arrays.toString(list.toArray()));
 
-
         Consumer<Integer> readingInt = n->{ System.out.println(n);};
+
         list.forEach(readingInt);
 
 
         System.out.println();
         for (int i: list) {
             System.out.println(i);
-        }
-
-
-
+        }*/
 
 
         //practice
@@ -79,7 +287,6 @@ public class RoughMain {
         System.out.println();*/
 
 
-
         //Concept of Inheritance with animal examples.
 /*
         inheritanceRough.Buffalo b = new inheritanceRough.Buffalo();
@@ -99,7 +306,6 @@ public class RoughMain {
 //
 //        //done casting animal to mamels just for using them.
 //        inheritanceRough.CMamels a1 = (inheritanceRough.CMamels) a;
-
 
 
         //        inheritanceRough.CHerbivore c = new inheritanceRough.Buffalo();
@@ -525,7 +731,7 @@ try {
 //            stuFatherName[i]=sc.next();
 //        }
 //        for (int i = 0; i < 2; i++) {
-//            System.out.print((i+1)+". Student Father name is: "+stuFatherName[i]);
+//            System.out.print((i+1)+". stero Father name is: "+stuFatherName[i]);
 //            System.out.println();
 //        }
 
