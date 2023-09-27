@@ -4,11 +4,14 @@ import InheritanceOverriding.Plane;
 import InheritanceOverriding.Shared;
 import org.w3c.dom.Node;
 
+import javax.crypto.Cipher;
+import javax.crypto.CipherInputStream;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -32,6 +35,7 @@ public class RoughMain {
     }
 
     public static void main(String[] args) throws RuntimeException, Exception {
+
 
 
         //HashMap
@@ -63,7 +67,7 @@ public class RoughMain {
         List<Integer> l = Arrays.asList(3,5);
         l.forEach(valueSet);*/
 
-
+/*
         //revision of list functions
         ZonedDateTime z = ZonedDateTime.now();
         System.out.println(z);
@@ -97,7 +101,7 @@ public class RoughMain {
 
         newListFromArrayList.forEach(toLowerCase);
         newListFromArrayList.forEach(toUpperCase);
-        newListFromArrayList.forEach(toInItCap);
+        newListFromArrayList.forEach(toInItCap);*/
 
 /*
         //revision List class.

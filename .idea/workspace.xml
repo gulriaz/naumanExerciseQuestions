@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="AGAIN &gt;&gt;&gt; file updated 22-9-2023">
+    <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="NOTE::Khuch smj na aie contact me.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterfactingPractice04/IndianArmy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterfactingPractice04/IndianArmy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterfactingPractice04/PakistanArmy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterfactingPractice04/PakistanArmy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterfactingPractice04/TacticalAtrributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterfactingPractice04/TacticalAtrributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterfactingPractice04/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterfactingPractice04/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +24,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b810d8b7-172c-420c-bf0a-8f7690c41789" />
+        <option name="url" value="https://github.com/gulriaz/naumanExerciseQuestions.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -126,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695397610595</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NOTE::Khuch smj na aie contact me.">
+      <option name="closed" value="true" />
+      <created>1695659351714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695659351714</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +163,8 @@
     <MESSAGE value="Mushtaq bhai file updated" />
     <MESSAGE value="file updated 22-9-2023" />
     <MESSAGE value="AGAIN &gt;&gt;&gt; file updated 22-9-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="AGAIN &gt;&gt;&gt; file updated 22-9-2023" />
+    <MESSAGE value="NOTE::Khuch smj na aie contact me." />
+    <option name="LAST_COMMIT_MESSAGE" value="NOTE::Khuch smj na aie contact me." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
