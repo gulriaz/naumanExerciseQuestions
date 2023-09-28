@@ -752,7 +752,7 @@ public class LMain {
 //            System.out.println("=> outer: "+resultOuter);
             while (countInner <= stopFlag) {//initially stop flag is 0.
                 resultInner = intValue2 * countInner;
-//                System.out.println("--> Inner: "+resultInner);
+//                System.out.println("--> InnerHoldingOuter: "+resultInner);
                 if(resultOuter==resultInner){
                     hcfSaved=resultInner;
                 }
@@ -760,7 +760,7 @@ public class LMain {
 //                    System.out.println("LCM found: "+resultInner);
                 }
                 countInner++;
-//                System.out.println("++=>counter Inner: "+countInner);
+//                System.out.println("++=>counter InnerHoldingOuter: "+countInner);
             }
             countInner = 1;
             startFlag++;
@@ -789,14 +789,14 @@ public class LMain {
 //            System.out.println("=> outer: "+resultOuter);
             while (countInner <= stopFlag) {//initially stop flag is 0.
                 resultInner = intValue2 * countInner;
-//                System.out.println("--> Inner: "+resultInner);
+//                System.out.println("--> InnerHoldingOuter: "+resultInner);
                 if(resultOuter==resultInner){
                     System.out.println("LCM found: "+resultInner);
                     System.exit(0);
                 }
 
                 countInner++;
-//                System.out.println("++=>counter Inner: "+countInner);
+//                System.out.println("++=>counter InnerHoldingOuter: "+countInner);
 
             }
             countInner = 1;
