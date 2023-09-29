@@ -1,4 +1,4 @@
-package LinkedList02;
+package LinkedList02WithInnerClassConcpetAlongTemplateClass;
 
 public class DataMembersClass<T> {
     T NodeData;

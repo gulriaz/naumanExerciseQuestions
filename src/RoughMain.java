@@ -36,6 +36,7 @@ public class RoughMain {
 
     public static void main(String[] args) throws RuntimeException, Exception {
 
+        System.out.println();
 
 
         //HashMap

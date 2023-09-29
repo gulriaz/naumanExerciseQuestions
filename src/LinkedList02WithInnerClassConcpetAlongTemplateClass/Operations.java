@@ -1,9 +1,7 @@
-package LinkedList02;
-
-import javax.xml.crypto.Data;
+package LinkedList02WithInnerClassConcpetAlongTemplateClass;
 
 public class Operations<t> {
-    DataMembersClass<t> head;
+    private DataMembersClass<t> head;
 
 //    DataMembersClass<t> current = new DataMembersClass<>();
 
@@ -27,7 +25,7 @@ public class Operations<t> {
         }
     }
 
-    public void displayLinkedList() {
+    private void displayLinkedList() {
         DataMembersClass<t> current = head;
 
         while (current != null) {
@@ -35,6 +33,23 @@ public class Operations<t> {
             current = current.link;
         }
         System.out.println("list ended.");
+    }
+
+    public class Inner {
+
+        public void accessMethodInner(){
+
+            System.out.println(">>>Accessing displaylinkedlist method.");
+            displayLinkedList();
+
+            System.out.println(">>>Accessing private head variable of linkedlist.");
+
+            if(head!=null)
+            System.out.println(head.NodeData +" == "+head.link);
+            else
+                System.out.println(">>>head of the list is null: "+head);
+        }
+
     }
 
 }
