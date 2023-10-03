@@ -2,6 +2,7 @@ package LinkedList02WithInnerClassConcpetAlongTemplateClass;
 
 public class Operations<t> {
     private DataMembersClass<t> head;
+    private t variableOuter;
 
 //    DataMembersClass<t> current = new DataMembersClass<>();
 
@@ -35,10 +36,13 @@ public class Operations<t> {
         System.out.println("list ended.");
     }
 
-    public class Inner {
+    public class Inner<T> {
 
+        T variableInner;
         public void accessMethodInner(){
 
+//            variableOuter=(t)variableInner;
+            System.out.println("variable outer is accessed: "+variableOuter);
             System.out.println(">>>Accessing displaylinkedlist method.");
             displayLinkedList();
 

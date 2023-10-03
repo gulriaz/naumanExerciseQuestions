@@ -1,4 +1,4 @@
-package InnerOutterClassConcept;
+package InnerOuterClassPractice00;
 
 public class InnerHoldingOuter {
 
