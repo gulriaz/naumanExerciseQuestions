@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="NOTE::Khuch smj na aie contact me.">
-      <change afterPath="$PROJECT_DIR$/src/Array01/CArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array01/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice01/CIOuter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice01/OnClick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice01/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice01/rougt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="3ce6bee0-1b61-435c-8a78-518219e61393" name="Changes" comment="NOTE::inner classess and final keyword as magical word in java">
+      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice02/TopLevelClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice02/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InnerOutterClassConcept/InnerHoldingOuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice00/InnerHoldingOuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InnerOutterClassConcept/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InnerOuterClassPractice00/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList02WithInnerClassConcpetAlongTemplateClass/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList02WithInnerClassConcpetAlongTemplateClass/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList02WithInnerClassConcpetAlongTemplateClass/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList02WithInnerClassConcpetAlongTemplateClass/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoughMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoughMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Record" />
+        <option value="Enum" />
         <option value="Interface" />
       </list>
     </option>
@@ -47,6 +41,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -64,13 +61,18 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21 (4)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mypc/IdeaProjects/Exercise2/src/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="InnerOuterClassPractice02" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mypc\IdeaProjects\Exercise2\src" />
     </key>
@@ -156,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695659351714</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="NOTE::inner classess and final keyword as magical word in java">
+      <option name="closed" value="true" />
+      <created>1696369861906</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696369861906</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +188,8 @@
     <MESSAGE value="file updated 22-9-2023" />
     <MESSAGE value="AGAIN &gt;&gt;&gt; file updated 22-9-2023" />
     <MESSAGE value="NOTE::Khuch smj na aie contact me." />
-    <option name="LAST_COMMIT_MESSAGE" value="NOTE::Khuch smj na aie contact me." />
+    <MESSAGE value="NOTE::inner classess and final keyword as magical word in java" />
+    <option name="LAST_COMMIT_MESSAGE" value="NOTE::inner classess and final keyword as magical word in java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -189,5 +200,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

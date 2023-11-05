@@ -27,6 +27,7 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/*
 public class RoughMain {
     {
         //initializer block
@@ -36,7 +37,17 @@ public class RoughMain {
 
     public static void main(String[] args) throws RuntimeException, Exception {
 
-        System.out.println();
+//        System.out.println();
+        Animal animal = new Animal();
+        animal.eat();
+        Animal animal1 = new Elephant();
+        animal1.eat();
+*/
+
+//        R.drawable.BACKGROUND_IMAGE
+//        R.drawable dr = new R().new drawable();
+//        R.values va = new R.values();
+//        RT rt = new RT();
 
 
         //HashMap
@@ -928,6 +939,6 @@ try {
                 System.out.println("Your String is: "+RoughClassSideUsage.readValidIntFromRange(r.getMessage(),r.getRangeStart(),r.getRangeEnd()));
 */
 
-    }
-}
+ /*   }
+}*/
 
