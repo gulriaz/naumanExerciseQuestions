@@ -26,6 +26,109 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptEngine;
+import javax.script.ScriptException;
+
+public class RoughMain {
+    public static void main(String[] args) {
+
+
+        Car c = new Car.Builder()
+                .startBuilder();
+
+        System.out.println(c);
+
+
+/*
+        Car.Builder b = new Car.Builder();
+        b.setCarName("Alto");
+        b.setCarPrice(85.20F);
+
+        System.out.println(b.getCarName()+b.getCarPrice());
+
+        Car.Builder c = new Car.Builder();
+        c.setCarPrice(8500.2F).setCarName("Swift");
+
+        System.out.println(c);
+*/
+
+
+
+
+/*Pizza p=new Pizza.Builder()
+        .setFlavour("fajita")
+        .setPizzaPrice(200)
+        .build();
+        System.out.println(p.toString());
+        Pizza p1=new Pizza.Builder()
+                .setPizzaPrice(200)
+                .build();
+        System.out.println(p1.toString());
+
+        Pizza p3=new Pizza.Builder()
+                .setPizzaPrice(300)
+                .build();
+
+
+        p3.setFlavour("tikka");
+        System.out.println(p3.toString());
+
+Pizza p4=new Pizza.Builder()
+        .build();
+        System.out.println(p4.toString());*/
+
+
+
+        /*String sBuilderToSimpleString = "35+68";
+        int startoperator = 0;
+        for (int i = sBuilderToSimpleString.length() - 1; i >= 0; i--) {
+
+            char ch = sBuilderToSimpleString.charAt(i);
+
+            if (!(ch >= 48 && ch <= 57)) {
+
+                startoperator = i;
+                System.out.println(sBuilderToSimpleString);
+                String operand1 = sBuilderToSimpleString.substring(0, startoperator);
+                String operand2 = sBuilderToSimpleString.substring(startoperator + 1);
+                char operator = sBuilderToSimpleString.charAt(i);
+                System.out.println(operand1 + " " + operator + " " + operand2);
+            }
+        }*/
+
+    }
+}
+
+
+
+
+    /*String str_val = "85+32";
+//    System.out.println(str_val.charAt(str_val.length()-1));
+    for (int i = str_val.length() - 1; i >= 0; i--) {
+
+        char ch = str_val.charAt(i);
+        if (!(ch >=48 && ch<=57)) {
+            System.out.println("inside operators");
+            StringBuilder s = new StringBuilder();
+            for (int j = i+1; j <=str_val.length()-1 ; j++) {
+                char chr=str_val.charAt(j);
+                String value=Character.toString(chr);
+                s.append(value);
+                System.out.println(">>"+value);
+            }
+            String svalue= s.toString();
+            System.out.println(svalue);
+
+        } else {
+            System.out.println("outside operators");
+        }
+
+    }*/
+
+
+
+
 
 /*
 public class RoughMain {
@@ -50,7 +153,7 @@ public class RoughMain {
 //        RT rt = new RT();
 
 
-        //HashMap
+//HashMap
         /*HashMap<String,String> hMap = new HashMap<>();
         hMap.put("x","y");
         hMap.put("javaid","gulraiz");
@@ -59,14 +162,14 @@ public class RoughMain {
         System.out.println(hMap);*/
 
 
-        //initializer block
-        //we know if any class has initializer block than block is called with the
-        //constructor of that class.
+//initializer block
+//we know if any class has initializer block than block is called with the
+//constructor of that class.
 
-        /*  RoughMain r = new RoughMain();*/
+/*  RoughMain r = new RoughMain();*/
 
 
-        //revision of list outside main handling.
+//revision of list outside main handling.
         /*Consumer<Integer> valueSet = n-> {
 
             if( n.equals(3)){
@@ -165,7 +268,7 @@ public class RoughMain {
 //        else System.out.println("all record not matched.");
 
 
-        //learning HashSet table.
+//learning HashSet table.
         /*LocalTime timeCurrent = LocalTime.now();
         DateTimeFormatter timeformat = DateTimeFormatter.ofPattern("HH:mm:ss");
 
@@ -192,7 +295,7 @@ public class RoughMain {
         vehicles.forEach(namesOfItems);*/
 
 
-        //creating hashmap key,value concept.  put, get, clear, remove, size
+//creating hashmap key,value concept.  put, get, clear, remove, size
 
 /*
         LocalTime timeCurrent = LocalTime.now();
@@ -232,7 +335,7 @@ public class RoughMain {
 */
 
 
-        //date time settings: w3schools
+//date time settings: w3schools
 //        LocalTime timeget = LocalTime.now();
 //        DateTimeFormatter timeformat = DateTimeFormatter.ofPattern("HH:mm:ss");
 //
@@ -241,7 +344,7 @@ public class RoughMain {
 //        System.out.println(newTimeGetFormatted);
 
 
-        //holala jhingalala important.
+//holala jhingalala important.
         /*ArrayList<Integer> list = new ArrayList() {{add(12);add(26);}};
         list.add(25);
         list.add(26);
@@ -263,7 +366,7 @@ public class RoughMain {
         }*/
 
 
-        //practice
+//practice
        /* ArrayList<inheritanceRough.CAnimal> animal = new ArrayList<>();
         animal.add(new inheritanceRough.CMamels());
         animal.add(new inheritanceRough.CRaptiles());
@@ -296,14 +399,14 @@ public class RoughMain {
         System.out.println(c.toString());
 */
 
-        //concept of inheritance with vehicles example.
+//concept of inheritance with vehicles example.
         /*inheritanceRough.Vehicles v= new inheritanceRough.Vehicles();
         System.out.println(v.vehCat);
         inheritanceRough.Car v2 = new inheritanceRough.Car();
         System.out.println();*/
 
 
-        //Concept of Inheritance with animal examples.
+//Concept of Inheritance with animal examples.
 /*
         inheritanceRough.Buffalo b = new inheritanceRough.Buffalo();
         System.out.println("inheritanceRough.Buffalo digestive system produces: " + b.buffaloGas);
@@ -324,12 +427,12 @@ public class RoughMain {
 //        inheritanceRough.CMamels a1 = (inheritanceRough.CMamels) a;
 
 
-        //        inheritanceRough.CHerbivore c = new inheritanceRough.Buffalo();
+//        inheritanceRough.CHerbivore c = new inheritanceRough.Buffalo();
 
-        //parent class unable to access child variables.??? parent class holds the objects of child class.
+//parent class unable to access child variables.??? parent class holds the objects of child class.
 
 
-        //arraylist  with mushtaq bhai.
+//arraylist  with mushtaq bhai.
         /*int len=5;
         int[] numbers = new int[len];
         int[] numbers2 = new int[len];
@@ -344,7 +447,7 @@ public class RoughMain {
         System.out.println(Arrays.toString(numbers2));*/
 
 
-        //qusetion umar bhai allamiqbal wala problems.
+//qusetion umar bhai allamiqbal wala problems.
         /*Scanner sc = new Scanner(System.in);
         int valueInt;
         char status = 'y';
@@ -408,7 +511,7 @@ public class RoughMain {
         }*/
 
 
-        //jagged array
+//jagged array
 /*
         Scanner sc = new Scanner(System.in);
 
@@ -444,7 +547,7 @@ public class RoughMain {
         }*/
 
 
-        //Array 3d accessing style.
+//Array 3d accessing style.
         /*int[][][] list = new int[2][1][5];
         int count = 1, valueStored = 0;
         Scanner sc = new Scanner(System.in);
@@ -474,7 +577,7 @@ public class RoughMain {
         }*/
 
 
-        //adjusting image inside an image.
+//adjusting image inside an image.
            /* BufferedImage sourceImageTV =null, sourceImageButterfly=null;
             File file = null, file2=null;
             Scanner sc = new Scanner(System.in);
@@ -521,7 +624,7 @@ public class RoughMain {
             }
 */
 
-        //created image border pink
+//created image border pink
         /*char status = 'y';
         while (status == 'y') {
             BufferedImage effectImageGreen = null, sourceImageTiberium =null;
@@ -577,7 +680,7 @@ public class RoughMain {
         }*/
 
 
-        //array 3d concept. not clear
+//array 3d concept. not clear
         /*int [][][] rollNumber = new int[2][3][2];
         int counter = 0;
         for (int i = 0; i < rollNumber.length; i++) {
@@ -592,7 +695,7 @@ public class RoughMain {
         }*/
 
 
-        //array 2d concept.
+//array 2d concept.
         /*int[][] list = new int[2][3];
 //        System.out.println(list.length);
   //      System.out.println(list[0].length);
@@ -608,8 +711,8 @@ public class RoughMain {
         }
 */
 
-        //array: it is list of items of homogenous data types. Array is primitive datatype. contiguous memory
-        //blocks of same datatype.
+//array: it is list of items of homogenous data types. Array is primitive datatype. contiguous memory
+//blocks of same datatype.
 
  /*       int[] inputNumber = new int[5];
         int status=0;
@@ -752,7 +855,7 @@ try {
 //        }
 
 //image processing.
-        //same code using OOP technique.
+//same code using OOP technique.
 
         /*String sourceFile = "C:\\Users\\mypc\\Desktop\\game.png";
         String destinationFile = "C:\\Users\\mypc\\Desktop\\gamecpy.png";
@@ -763,7 +866,7 @@ try {
             inheritanceRough.CImage.imageSavedToDisk(effectImage, "png", destinationFile);
         }*/
 
-        //color splashing without OOP.
+//color splashing without OOP.
         /*char status = 'y';
         while (status == 'y') {
             BufferedImage sourceImage = null, effectImage = null;
@@ -830,7 +933,7 @@ try {
         }*/
 
 
-        //image resizing.
+//image resizing.
         /*try {
 
             BufferedImage originalImage = ImageIO.read(new File("C:\\Users\\mypc\\Desktop\\Altis_Corolla.jpg"));//change path to where file is located
@@ -853,7 +956,7 @@ try {
         return resizedImage;
     }*/
 
-        //sir wala below
+//sir wala below
         /*BufferedImage sourceImage =null, effectImage=null;
         File file=null;
 
@@ -879,7 +982,7 @@ try {
         }*/
 
 
-        //random question sol 1
+//random question sol 1
         /*int sum = 0, intval = 0, intValueForSum;
         char ch;
         String s;
@@ -898,7 +1001,7 @@ try {
         System.out.println("sum is: " + sum);*/
 //random question sol2
 
-        //Diamond shape problem
+//Diamond shape problem
                 /*int lengthOfDiamond;
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Enter the length of diamond: ");
@@ -924,7 +1027,7 @@ try {
                         }
                 }*/
 
-        //commando task by sir nauman
+//commando task by sir nauman
                 /*RoughClassSideUsage r = new RoughClassSideUsage();
                 Scanner sc = new Scanner(System.in);
 
